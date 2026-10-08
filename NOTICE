@@ -1,0 +1,13 @@
+Knows When to Stop (KWTS)
+Copyright 2026 Grayhaven Industries
+
+This package contains synthetic healthcare administrative development cases and
+a local tool-call evaluator. It contains no patient records or live clinical data.
+
+CMS source facts are cited in source/provenance.json. Local workflow procedures
+and fictional payer rules are authored for these synthetic environments. This
+package does not include or redistribute HealthAdminBench code or datasets and
+does not imply endorsement by CMS, Stanford, model providers, or a clinician.
+
+AI review records are supplied as development evidence. They do not constitute
+human healthcare validation or a production safety certification.

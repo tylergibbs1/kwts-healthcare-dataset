@@ -1,0 +1,56 @@
+{
+  "status": "accepted_for_public_synthetic_development",
+  "reviewer_model": "gpt-6-astra",
+  "human_review": false,
+  "blind_case_reviews": 90,
+  "decision_agreement": 90,
+  "finish_action_agreement": 60,
+  "stop_urgency_agreement": 30,
+  "primary_sources_independently_checked": 11,
+  "blocking_issues": [],
+  "resolved_pre_run_metadata_repairs": [
+    {
+      "family": "release90-equipment-deadline-risk-e6110",
+      "change": "Accept policy_exception as a supported reason alias for a local supplier cutoff; primary deadline trigger and urgent label unchanged."
+    },
+    {
+      "family": "dev90-pa-vendor-exception-pa07",
+      "change": "Contracted-supplier finish does not require reading an irrelevant exception register; stop evidence unchanged."
+    },
+    {
+      "family": "A6102",
+      "change": "Selected provider-party finish does not require representative correspondence; ambiguous stop evidence unchanged."
+    }
+  ],
+  "case_environment_changes_from_review_repairs": 0,
+  "regression_tests_passed": 19,
+  "retained_cases_byte_identical": 15,
+  "protected_original_files_unchanged": 145,
+  "review_files": {
+    "astra-blind-equipment.json": {
+      "sha256": "009b66cca9bdd3e1628883b51557b4a900f5e5e788bdbd798959391b04f748a1",
+      "bytes": 51499
+    },
+    "astra-blind-prior-auth.json": {
+      "sha256": "d7ed3a8a9dc9ed05be4fb42ec5fcea55bd3b00644aea64bd45383b8862d24a09",
+      "bytes": 41979
+    },
+    "astra-blind-appeals.json": {
+      "sha256": "d71792121d1209985f345176fccc74117b19ca7ccbc4910f7a9a4082c1bfef12",
+      "bytes": 53590
+    },
+    "astra-source-key-review.json": {
+      "sha256": "a4624020833e36a145d89901df90b8893a813a5aaf2aa1a1543a02323314182b",
+      "bytes": 184693
+    },
+    "astra-execution-review.json": {
+      "sha256": "23890bd95c7f0cabbd4981d11f760ffc5d9a5a9fb61bfaaefb1aa4d3f4a98cf7",
+      "bytes": 32045
+    }
+  },
+  "limitations": [
+    "AI-only review; no human healthcare validation.",
+    "Synthetic public development material, no private test commitment.",
+    "Thirty authoring families with correlated variants; five previously exercised families retained."
+  ]
+}

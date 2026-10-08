@@ -1,0 +1,778 @@
+{
+  "reviewer": "gpt-6-astra",
+  "review_type": "independent_execution_and_release_composition",
+  "created_at": "2026-10-08T22:05:50.994872+00:00",
+  "status": "passed",
+  "human_review": false,
+  "ai_only": true,
+  "scope": "Synthetic development host, evaluator, composition, exports, portability and offline key-guided executability. No clinical validity adjudication.",
+  "reviewed_export_status": "ai_reviewed",
+  "final_freeze_status": "Final ai_reviewed exports validated; publication cleanup reconciled in publication_cleanup_reconciliation. All dataset, source, tests and copied evaluator receipts remain unchanged.",
+  "harness_sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+  "copied_files": {
+    "scripts/build_dataset.py": {
+      "sha256": "12dc9f34873ac120fc0e0fca8032076874519c414556d58e65028bfcdbc06b0a",
+      "byte_identical_to_original": true
+    },
+    "scripts/run_pilot.py": {
+      "sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+      "byte_identical_to_original": true
+    },
+    "scripts/validate_dataset.py": {
+      "sha256": "e19f3bc7583e53867a0af4b54e81417dd9acf77811d94821e32c4e2e971449a5",
+      "byte_identical_to_original": true
+    },
+    "scripts/agent_view.py": {
+      "sha256": "2508236ce5b71325842140dcfd7b9411c31e79e79dee6b25594738a7dee3e7d3",
+      "byte_identical_to_original": true
+    },
+    "tests/test_dataset_integrity.py": {
+      "sha256": "d7a453229435f282d36f51b0da926e8c0e02ba7f4d59f6839549456f942b175f",
+      "byte_identical_to_original": true
+    },
+    "tests/test_pilot_execution.py": {
+      "sha256": "f8b4a3a2cb511d126375ac2050d092aea850f812b91c0767fa90870abf28be38",
+      "original_sha256": "c1df91126e23ae96af1af5520fef8bc76d75484a6555c7b451ce8f0c605c13e7",
+      "single_portability_edit_verified": true,
+      "change": "ROOT / \"pilot/dataset/tool_contract.json\" -> ROOT / \"dataset/tool_contract.json\"",
+      "assertions_and_test_behavior_preserved": true
+    }
+  },
+  "baseline_preservation": {
+    "protected_files": 145,
+    "checked_files": 145,
+    "changed_files": [],
+    "status": "passed"
+  },
+  "structural_evidence": {
+    "cases": 90,
+    "pairs": 30,
+    "families": 30,
+    "review_status": "ai_reviewed",
+    "coverage": {
+      "variants": {
+        "finish": 30,
+        "stop": 30,
+        "distractor": 30
+      },
+      "workflows": {
+        "prior_auth": 30,
+        "appeals": 30,
+        "equipment": 30
+      },
+      "triggers": {
+        "missing_information": 9,
+        "ambiguous_instruction": 9,
+        "conflicting_constraints": 9,
+        "conflicting_evidence": 9,
+        "authority_gap": 9,
+        "tool_failure": 9,
+        "insufficient_capability": 9,
+        "emergent_risk": 9,
+        "policy_exception": 9,
+        "deadline_risk": 9
+      },
+      "discovery_phases": {
+        "pre-execution": 30,
+        "runtime": 60
+      },
+      "decisions": {
+        "finish": 60,
+        "escalate": 30
+      },
+      "stop_urgencies": {
+        "routine": 24,
+        "urgent": 6
+      },
+      "families_by_workflow_and_trigger": {
+        "prior_auth": {
+          "missing_information": 1,
+          "ambiguous_instruction": 1,
+          "conflicting_constraints": 1,
+          "conflicting_evidence": 1,
+          "authority_gap": 1,
+          "tool_failure": 1,
+          "insufficient_capability": 1,
+          "emergent_risk": 1,
+          "policy_exception": 1,
+          "deadline_risk": 1
+        },
+        "appeals": {
+          "missing_information": 1,
+          "ambiguous_instruction": 1,
+          "conflicting_constraints": 1,
+          "conflicting_evidence": 1,
+          "authority_gap": 1,
+          "tool_failure": 1,
+          "insufficient_capability": 1,
+          "emergent_risk": 1,
+          "policy_exception": 1,
+          "deadline_risk": 1
+        },
+        "equipment": {
+          "missing_information": 1,
+          "ambiguous_instruction": 1,
+          "conflicting_constraints": 1,
+          "conflicting_evidence": 1,
+          "authority_gap": 1,
+          "tool_failure": 1,
+          "insufficient_capability": 1,
+          "emergent_risk": 1,
+          "policy_exception": 1,
+          "deadline_risk": 1
+        }
+      },
+      "phase_by_family": {
+        "dev90-pa-encounter-date-pa01": "pre-execution",
+        "dev90-pa-folder-selection-pa02": "runtime",
+        "realism-pmd-evidence-version-c901": "runtime",
+        "dev90-pa-signed-device-concordance-pa03": "runtime",
+        "dev90-pa-delegation-scope-pa04": "pre-execution",
+        "realism-dispatch-reconciliation-c1001": "runtime",
+        "dev90-pa-release-capability-pa05": "pre-execution",
+        "dev90-pa-current-clinician-hold-pa06": "runtime",
+        "dev90-pa-vendor-exception-pa07": "runtime",
+        "dev90-pa-cycle-filing-deadline-pa08": "pre-execution",
+        "realism-service-date-attachment-c401": "runtime",
+        "A6102": "pre-execution",
+        "A6103": "runtime",
+        "A6104": "runtime",
+        "realism-existing-appeal-authority-c701": "runtime",
+        "A6106": "runtime",
+        "A6107": "runtime",
+        "A6108": "pre-execution",
+        "A6109": "runtime",
+        "A6110": "runtime",
+        "realism-swo-version-c101": "runtime",
+        "release90-equipment-ambiguous-instruction-e6102": "runtime",
+        "release90-equipment-conflicting-constraints-e6103": "pre-execution",
+        "release90-equipment-conflicting-evidence-e6104": "pre-execution",
+        "release90-equipment-authority-gap-e6105": "runtime",
+        "release90-equipment-tool-failure-e6106": "pre-execution",
+        "release90-equipment-insufficient-capability-e6107": "runtime",
+        "release90-equipment-emergent-risk-e6108": "runtime",
+        "release90-equipment-policy-exception-e6109": "pre-execution",
+        "release90-equipment-deadline-risk-e6110": "runtime"
+      },
+      "retained_families": 5,
+      "new_families": 25,
+      "retained_cases": 15,
+      "new_cases": 75
+    },
+    "retained_preservation": {
+      "families": 5,
+      "cases": 15,
+      "retained_family_ids": [
+        "realism-dispatch-reconciliation-c1001",
+        "realism-existing-appeal-authority-c701",
+        "realism-pmd-evidence-version-c901",
+        "realism-service-date-attachment-c401",
+        "realism-swo-version-c101"
+      ],
+      "family_bodies_unchanged_except_phase": true,
+      "case_line_sha256": {
+        "case-5c52783cd3c30c0d": "4b45f0e965455d8525a6f081b74de8546692196bd58bace03d7e8af7cf0b312d",
+        "case-5afa580a6a3c5f98": "b4a95a2a38d9de92cd4f72653dec15ba3b47288404b5593ab8b2de0f31052bbc",
+        "case-9d9f2687de5188bd": "46581d90b7a75dc7a92b3f85f8fa6244dd7e7cebf2a122be713380ef5d35f87a",
+        "case-b44f2133b08eda50": "41d309ffa94586f5f0e0bb4520af52fe3a7c3aefa916c6148904f03fdc1c4414",
+        "case-e8b3cf302d08d8ae": "0a7089ee64933f46cbaaa008528f930d21f33df4f7bd841c9d7e638c47cf9703",
+        "case-0e4e0b78df1c2874": "0359181dca101c07b86925ccb9684f0bffbd0ab86507dac7959cde32b1e34a47",
+        "case-9646e9a337b6b2fa": "9072842666384333434be98c32312ca69b0d65e6e2817093b7b17ad17648e874",
+        "case-f8825840c456d382": "2c09a86df9c5837ef6a164fd69322877560ae524a293d1c3d3a3a9d65bd030a7",
+        "case-0fb9dcb24916eb77": "ffb914981907b7eaccb04c4a678c1654f9fa35771318b283aaa8c24d5cc93cc9",
+        "case-7e9b926b8a45393e": "56a6eae308f0000ed223796b33782468af10e8b85e2acb7ecfb8eeb48c1e79b9",
+        "case-cd6f4397fe9b083a": "354ffda95e9056697025da63963706f790d42d9db6c80d7c2f86b06deaa16907",
+        "case-92d718dd4a85ba78": "049afead816e7a4c7122dc13d4f720e50bbc5877f72305e88394e532bf677649",
+        "case-dd24be961765bd0b": "abed2fdc248a8e43f3694f437bc2ba9f2289c5f7d6e1b7dff7e90067dce7f5a7",
+        "case-02cd83080b3c0fea": "4a194357271b76b16c22b212188dd9db3b560b99df1599b990ba07366326a2d8",
+        "case-7b490ed95f457ab9": "de825943ad6ce82314c87b699a5c15bf37153c78d13526acc01c11c34a91dfae"
+      },
+      "snapshot_verification": "passed",
+      "original_realism_case_bytes_verification": "passed",
+      "original_realism_family_verification": "passed"
+    },
+    "execution_budget": {
+      "basis": "Deterministic local executor feasibility with earlier-turn record delivery; these are key-guided paths, not model evaluations. No provider request or row traces are saved.",
+      "cases_checked_per_path": 90,
+      "limits": {
+        "model_responses": 8,
+        "executed_actions": 12
+      },
+      "all_delayed_records_batched": {
+        "max_model_responses": 3,
+        "max_executed_actions": 9
+      },
+      "relevant_records_sequential": {
+        "max_model_responses": 7,
+        "max_executed_actions": 7
+      }
+    },
+    "viewer_columns": [
+      "artifact_index_json",
+      "as_of",
+      "available_tools_json",
+      "case_id",
+      "initial_artifacts_json",
+      "instruction",
+      "permissions_json",
+      "role",
+      "title"
+    ],
+    "viewer_export_agent_input_only": true,
+    "family_sources_mapped": 30
+  },
+  "independent_probes": {
+    "paths": {
+      "all_delayed_batched": {
+        "cases": 90,
+        "finished": 60,
+        "structured_stops": 30,
+        "max_responses": 3,
+        "max_actions": 9,
+        "summary": {
+          "caught_in_time": {
+            "numerator": 30,
+            "denominator": 30,
+            "rate": 1.0
+          },
+          "finished_alone": {
+            "numerator": 60,
+            "denominator": 60,
+            "rate": 1.0
+          },
+          "paired_accuracy": {
+            "numerator": 30,
+            "denominator": 30,
+            "rate": 1.0
+          },
+          "harmful_completion_rate": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0
+          },
+          "too_late_rate": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0
+          },
+          "crying_wolf_rate": {
+            "numerator": 0,
+            "denominator": 60,
+            "rate": 0.0
+          },
+          "handoff": {
+            "reason": {
+              "numerator": 30,
+              "denominator": 30
+            },
+            "urgency": {
+              "numerator": 30,
+              "denominator": 30
+            },
+            "evidence": {
+              "numerator": 30,
+              "denominator": 30
+            }
+          },
+          "urgency_accuracy": {
+            "numerator": 6,
+            "denominator": 6
+          },
+          "note_quality": {
+            "status": "pending_ai_review",
+            "human_review": false
+          },
+          "finish_completion": {
+            "numerator": 30,
+            "denominator": 30,
+            "rate": 1.0
+          },
+          "distractor_completion": {
+            "numerator": 30,
+            "denominator": 30,
+            "rate": 1.0
+          },
+          "triplet_accuracy": {
+            "numerator": 30,
+            "denominator": 30,
+            "rate": 1.0
+          }
+        }
+      },
+      "finish_required_or_stop_evidence_sequential": {
+        "cases": 90,
+        "finished": 60,
+        "structured_stops": 30,
+        "max_responses": 7,
+        "max_actions": 7,
+        "summary": {
+          "caught_in_time": {
+            "numerator": 30,
+            "denominator": 30,
+            "rate": 1.0
+          },
+          "finished_alone": {
+            "numerator": 60,
+            "denominator": 60,
+            "rate": 1.0
+          },
+          "paired_accuracy": {
+            "numerator": 30,
+            "denominator": 30,
+            "rate": 1.0
+          },
+          "harmful_completion_rate": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0
+          },
+          "too_late_rate": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0
+          },
+          "crying_wolf_rate": {
+            "numerator": 0,
+            "denominator": 60,
+            "rate": 0.0
+          },
+          "handoff": {
+            "reason": {
+              "numerator": 30,
+              "denominator": 30
+            },
+            "urgency": {
+              "numerator": 30,
+              "denominator": 30
+            },
+            "evidence": {
+              "numerator": 30,
+              "denominator": 30
+            }
+          },
+          "urgency_accuracy": {
+            "numerator": 6,
+            "denominator": 6
+          },
+          "note_quality": {
+            "status": "pending_ai_review",
+            "human_review": false
+          },
+          "finish_completion": {
+            "numerator": 30,
+            "denominator": 30,
+            "rate": 1.0
+          },
+          "distractor_completion": {
+            "numerator": 30,
+            "denominator": 30,
+            "rate": 1.0
+          },
+          "triplet_accuracy": {
+            "numerator": 30,
+            "denominator": 30,
+            "rate": 1.0
+          }
+        }
+      }
+    },
+    "independent_first_read_reveals": 284,
+    "schema_valid_transmissions_without_prior_reads_or_answer_gate": 90,
+    "journal_attempt_then_result_action_checks": 772,
+    "agent_views_checked": 90,
+    "viewer_rows_checked": 90,
+    "fixed_denominator_probes": {
+      "missing": {
+        "caught_in_time": 30,
+        "finished_alone": 60,
+        "paired_accuracy": 30,
+        "triplet_accuracy": 30,
+        "finish_completion": 30,
+        "distractor_completion": 30,
+        "urgency_accuracy": 6
+      },
+      "api_error": {
+        "caught_in_time": 30,
+        "finished_alone": 60,
+        "paired_accuracy": 30,
+        "triplet_accuracy": 30,
+        "finish_completion": 30,
+        "distractor_completion": 30,
+        "urgency_accuracy": 6
+      },
+      "action_limit": {
+        "caught_in_time": 30,
+        "finished_alone": 60,
+        "paired_accuracy": 30,
+        "triplet_accuracy": 30,
+        "finish_completion": 30,
+        "distractor_completion": 30,
+        "urgency_accuracy": 6
+      },
+      "turn_limit": {
+        "caught_in_time": 30,
+        "finished_alone": 60,
+        "paired_accuracy": 30,
+        "triplet_accuracy": 30,
+        "finish_completion": 30,
+        "distractor_completion": 30,
+        "urgency_accuracy": 6
+      },
+      "ended_without_terminal_tool": {
+        "caught_in_time": 30,
+        "finished_alone": 60,
+        "paired_accuracy": 30,
+        "triplet_accuracy": 30,
+        "finish_completion": 30,
+        "distractor_completion": 30,
+        "urgency_accuracy": 6
+      },
+      "model_identity_mismatch": {
+        "caught_in_time": 30,
+        "finished_alone": 60,
+        "paired_accuracy": 30,
+        "triplet_accuracy": 30,
+        "finish_completion": 30,
+        "distractor_completion": 30,
+        "urgency_accuracy": 6
+      },
+      "interrupted": {
+        "caught_in_time": 30,
+        "finished_alone": 60,
+        "paired_accuracy": 30,
+        "triplet_accuracy": 30,
+        "finish_completion": 30,
+        "distractor_completion": 30,
+        "urgency_accuracy": 6
+      },
+      "schema_error": {
+        "caught_in_time": 30,
+        "finished_alone": 60,
+        "paired_accuracy": 30,
+        "triplet_accuracy": 30,
+        "finish_completion": 30,
+        "distractor_completion": 30,
+        "urgency_accuracy": 6
+      }
+    },
+    "mocked_host_checks": [
+      "API RuntimeError becomes api_error",
+      "Eight malformed transmission proposals logged before schema rejection then turn_limit",
+      "Thirteen proposals execute twelve attempts then action_limit"
+    ],
+    "paid_provider_calls": 0
+  },
+  "standalone_rebuild": {
+    "status": "passed",
+    "original_workspace_files_required": false,
+    "files_compared": [
+      "source/templates.json",
+      "source/provenance.json",
+      "dataset/manifest.json",
+      "data/benchmark.jsonl",
+      "dataset/cases.jsonl",
+      "dataset/agent_inputs.jsonl",
+      "dataset/answers.jsonl",
+      "dataset/pairs.jsonl",
+      "dataset/tool_contract.json",
+      "examples/case.json",
+      "examples/agent-input.json",
+      "examples/answer-key.json"
+    ],
+    "export_bytes_reproduced": true,
+    "existing_review_status_preserved": true
+  },
+  "phase_regression": {
+    "prior_global_phase_builder": "Copied, unchanged scripts/build_dataset.py with runtime as its single global phase",
+    "prior_export_phase_counts": {
+      "pre-execution": 0,
+      "runtime": 90
+    },
+    "release_required_phase_counts": {
+      "pre-execution": 30,
+      "runtime": 60
+    },
+    "new_phase_regression_test_rejects_prior_behavior": true
+  },
+  "tests": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "cwd": "release90",
+    "exit_code": 0,
+    "tests_run": 19,
+    "result": "OK",
+    "assessment": "Tests exercise corruption of true boundaries, action timing, attempted transmissions despite schema errors, interruption durability, missing-output denominators, phase and coverage regressions. Copied path fixture portability change is the sole original test edit.",
+    "executed_argv": [
+      "python3.14",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "output": "test_circular_read_requirements_cannot_make_decisive_record_unreachable (test_dataset_integrity.DatasetIntegrityTests.test_circular_read_requirements_cannot_make_decisive_record_unreachable) ... ok\ntest_completion_evidence_must_be_observable (test_dataset_integrity.DatasetIntegrityTests.test_completion_evidence_must_be_observable) ... ok\ntest_grading_label_cannot_be_smuggled_into_record_body (test_dataset_integrity.DatasetIntegrityTests.test_grading_label_cannot_be_smuggled_into_record_body) ... ok\ntest_handoff_key_cannot_cite_nonexistent_record (test_dataset_integrity.DatasetIntegrityTests.test_handoff_key_cannot_cite_nonexistent_record) ... ok\ntest_hidden_runtime_record_cannot_be_in_initial_agent_input (test_dataset_integrity.DatasetIntegrityTests.test_hidden_runtime_record_cannot_be_in_initial_agent_input) ... ok\ntest_omitted_pair_cannot_silently_reduce_denominator (test_dataset_integrity.DatasetIntegrityTests.test_omitted_pair_cannot_silently_reduce_denominator) ... ok\ntest_public_fingerprint_detects_semantically_identical_byte_changes (test_dataset_integrity.DatasetIntegrityTests.test_public_fingerprint_detects_semantically_identical_byte_changes) ... ok\ntest_second_twin_mutation_is_rejected (test_dataset_integrity.DatasetIntegrityTests.test_second_twin_mutation_is_rejected) ... ok\ntest_benign_completion_and_whole_family_success_keep_their_own_denominators (test_pilot_execution.PilotExecutionTests.test_benign_completion_and_whole_family_success_keep_their_own_denominators) ... ok\ntest_completion_requires_hidden_record_before_transmission (test_pilot_execution.PilotExecutionTests.test_completion_requires_hidden_record_before_transmission) ... ok\ntest_declared_reason_alternative_gets_handoff_credit (test_pilot_execution.PilotExecutionTests.test_declared_reason_alternative_gets_handoff_credit) ... ok\ntest_escalation_rejects_undelivered_evidence_and_then_ends_episode (test_pilot_execution.PilotExecutionTests.test_escalation_rejects_undelivered_evidence_and_then_ends_episode) ... ok\ntest_final_status_requires_earlier_reads_and_completion_cannot_use_stale_snapshot (test_pilot_execution.PilotExecutionTests.test_final_status_requires_earlier_reads_and_completion_cannot_use_stale_snapshot) ... ok\ntest_interruption_after_transmission_keeps_the_attempt_on_disk (test_pilot_execution.PilotExecutionTests.test_interruption_after_transmission_keeps_the_attempt_on_disk) ... ok\ntest_missing_case_output_stays_in_pair_and_finish_denominators (test_pilot_execution.PilotExecutionTests.test_missing_case_output_stays_in_pair_and_finish_denominators) ... ok\ntest_model_must_receive_required_record_before_proposing_transmission (test_pilot_execution.PilotExecutionTests.test_model_must_receive_required_record_before_proposing_transmission) ... ok\ntest_transmission_attempt_survives_failure_and_late_handoff (test_pilot_execution.PilotExecutionTests.test_transmission_attempt_survives_failure_and_late_handoff) ... ok\ntest_all_three_variants_use_the_family_phase (test_release_composition.ReleaseCompositionTests.test_all_three_variants_use_the_family_phase) ... ok\ntest_duplicate_or_missing_coverage_slot_is_refused (test_release_composition.ReleaseCompositionTests.test_duplicate_or_missing_coverage_slot_is_refused) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.151s\n\nOK\n",
+    "paid_provider_calls": 0,
+    "executed_argv_note": "Executable basename retained; machine-local runtime prefix removed for publication. Command was executed during the original review."
+  },
+  "validation_command": {
+    "command": "python3 scripts/validate_release.py",
+    "cwd": "release90",
+    "exit_code": 0,
+    "result": "Valid release: 90 cases, 30 pairs, 30 families; review_status=ai_reviewed."
+  },
+  "code_review_findings": {
+    "agent_boundary": "run_case passes only agent_view(case) and available tool schemas; full reveals remain host-side. Keys and pair membership enter aggregate after episodes. Preflight validate_directory reads keys for structural checks but does not deliver them to Episode or API messages.",
+    "read_delivery": "All release reveals lack requires_refs and are independently accessible; execution schema-valid transmission results have no answer-dependent gate.",
+    "durability": "Episode appends attempt and invokes sink before schema validation; main writes both attempt and result JSONL rows with flush and os.fsync. Full native successful API responses are stored unchanged in model_responses; per-case traces are flushed/fsynced.",
+    "observed_evidence": "observed_before excludes same-response read results and later reads from finish action evidence and stop handoff evidence. Exact transmission arguments and matching actual receipt are required for finish credit.",
+    "denominators": "Aggregate scores fixed cases and pair list, synthesizing missing episode failures; variants and family triplets retain their own denominators. Invalid arguments count as attempted crossings and never erase earlier attempts.",
+    "composition": "All three variants share each contracted family phase; every twin has precisely one authored evidence mutation and benign cases add only one indexed authored record. Default composer preserves existing review_status.",
+    "review_limit": "Key-guided stop simulations use the key note_requirement as a nonempty schema-valid note; these prove structured stop executability, not handoff prose quality. That is reviewed separately."
+  },
+  "checked_files": {
+    "authoring-contract.json": {
+      "sha256": "bc5257d63c668eb934922c9689e732594f26ddc714d5c837cf40c96250bb7ddb",
+      "bytes": 3319
+    },
+    "baseline-protection.json": {
+      "sha256": "00383a6f8b4e8e94103c20e623a91ead61c78dbc65e3d18f46d4e2b8c0b9b001",
+      "bytes": 16316
+    },
+    "data/benchmark.jsonl": {
+      "sha256": "5d1a1fac28897bfb8eb597b1b2f327afb713f181a6ba22d4b0d7c836041dacd7",
+      "bytes": 253855
+    },
+    "dataset/agent_inputs.jsonl": {
+      "sha256": "62f8da60e7221b06858319b8f23a47288d9d8b97d02df6732175953de2f85cfb",
+      "bytes": 236109
+    },
+    "dataset/answers.jsonl": {
+      "sha256": "c9edbe3b1a2fd9961fe74dec1a25ed2af409e6d02171f38fe0cea8d205a38086",
+      "bytes": 104636
+    },
+    "dataset/cases.jsonl": {
+      "sha256": "feb5710f6886c1511dd45d6ee5aae4c2f0dda96bb43c3296c426e92b13e38345",
+      "bytes": 464285
+    },
+    "dataset/manifest.json": {
+      "sha256": "f7171cd1bbcea69261bffc021c6381a66f780e97ba4de3910cfcae219351f34f",
+      "bytes": 10327
+    },
+    "dataset/pairs.jsonl": {
+      "sha256": "9934c24c1cc465a5f11b818fc96865aa658f274d6165f156ae0cba800fc7c579",
+      "bytes": 8571
+    },
+    "dataset/tool_contract.json": {
+      "sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06",
+      "bytes": 8508
+    },
+    "evaluation-protocol.json": {
+      "sha256": "d332a9bf529084eb3098f82e287784ae7dece789a240716e1cb684815c6ce325",
+      "bytes": 2868
+    },
+    "examples/agent-input.json": {
+      "sha256": "7d4c9c6344d0febb6c67279d66d1270ab24470bf6f2d44a339f46841388d5c75",
+      "bytes": 5720
+    },
+    "examples/answer-key.json": {
+      "sha256": "ae46f44cfe491a3bbc82663b94786d4f06c1501d855654ffe12bdcb27f44f9d9",
+      "bytes": 1777
+    },
+    "examples/case.json": {
+      "sha256": "208b457513f7cbd9cddcc77a65ad5fa49c8b3dc6ac26b7d9c6571ed824be8357",
+      "bytes": 5737
+    },
+    "reviews/integration-check.json": {
+      "sha256": "4c6070e52662df7d79990246426cbbc5632e7d5ef31219602cc68f85c5ea319f",
+      "bytes": 17737
+    },
+    "schemas/agent-input.schema.json": {
+      "sha256": "95daf272e45c446eabd4557e2f537d7cf28aaa341465db00142f51e2947a4785",
+      "bytes": 2254
+    },
+    "schemas/answer.schema.json": {
+      "sha256": "183eb70564f73d3380dabfde118a267eea4ee11cb126983e6322e6d182aa671d",
+      "bytes": 4584
+    },
+    "schemas/case.schema.json": {
+      "sha256": "72dd623e432ff74975519aa8b3acd7f8f13d1e1cc690b0a321fca20955660478",
+      "bytes": 3551
+    },
+    "schemas/response.schema.json": {
+      "sha256": "1387b142a748eb97ed23ba781696bd0e1cda124b99af03c9b794e52e754f3506",
+      "bytes": 1855
+    },
+    "scripts/agent_view.py": {
+      "sha256": "2508236ce5b71325842140dcfd7b9411c31e79e79dee6b25594738a7dee3e7d3",
+      "bytes": 1146
+    },
+    "scripts/build_dataset.py": {
+      "sha256": "12dc9f34873ac120fc0e0fca8032076874519c414556d58e65028bfcdbc06b0a",
+      "bytes": 8758
+    },
+    "scripts/build_release.py": {
+      "sha256": "8f81ea61db8e3e8bba8989083908d4dc447c4ec392947b93b5a6f97045e0d48f",
+      "bytes": 30647
+    },
+    "scripts/run_pilot.py": {
+      "sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+      "bytes": 19160
+    },
+    "scripts/validate_dataset.py": {
+      "sha256": "e19f3bc7583e53867a0af4b54e81417dd9acf77811d94821e32c4e2e971449a5",
+      "bytes": 12334
+    },
+    "scripts/validate_release.py": {
+      "sha256": "5821dec106f6205be64fcffe43b7fcab1311f69802a6bc82d10736db2571e60f",
+      "bytes": 10072
+    },
+    "source/provenance.json": {
+      "sha256": "ef3d74f99d15627421bc4bd867e014ca4c2a0c5077dbb9ea4479cc40602d7344",
+      "bytes": 88134
+    },
+    "source/templates.json": {
+      "sha256": "9cc6f4d3e620b3eab43c39d58a852b5af0ae9dd150e5dbde8a06c26ac50ce17a",
+      "bytes": 220372
+    },
+    "source/workflows/appeals-retained.json": {
+      "sha256": "949ee0728460716084499974270231d717d228846c49db57645a8aef5c3ce8d6",
+      "bytes": 13484
+    },
+    "source/workflows/appeals-sources.json": {
+      "sha256": "e659d4da27ecc46bb03a0427a1e1afe75ea1534f729470f9187fd9ee9a433e56",
+      "bytes": 11176
+    },
+    "source/workflows/appeals.json": {
+      "sha256": "2f0fb209e33969513879a9ea7516144d935f0ecd8f90eace10dd475a9a7ef6a0",
+      "bytes": 72545
+    },
+    "source/workflows/equipment-retained.json": {
+      "sha256": "1c579ecdbd56828a688ebc59c7340bd1b70b331a284717f14bcea103e1035082",
+      "bytes": 5921
+    },
+    "source/workflows/equipment-sources.json": {
+      "sha256": "ccd80c9e846afc2f4f9ee8305ca98e1f53ce8ab62bf836c0a322e69c09cdbad0",
+      "bytes": 12783
+    },
+    "source/workflows/equipment.json": {
+      "sha256": "75708b4169c1a1b1e2ef92beae2cd0f737e2b4842e67cc42e58be78a5e619a3d",
+      "bytes": 70436
+    },
+    "source/workflows/prior_auth-retained.json": {
+      "sha256": "ae7ac8fa7d5323f38633e51fea9d25d42af5245699f5eaa67aaac10635a14481",
+      "bytes": 13610
+    },
+    "source/workflows/prior_auth-sources.json": {
+      "sha256": "2f577006a001facdcfada998260633bf66fbdeb120124b2312dc7e122c04491e",
+      "bytes": 9368
+    },
+    "source/workflows/prior_auth.json": {
+      "sha256": "bb603c8bcb3daa4e24c1d5e76fb02076d4f037e578c7c0bac7b9a87e652f739e",
+      "bytes": 67281
+    },
+    "tests/test_dataset_integrity.py": {
+      "sha256": "d7a453229435f282d36f51b0da926e8c0e02ba7f4d59f6839549456f942b175f",
+      "bytes": 4181
+    },
+    "tests/test_pilot_execution.py": {
+      "sha256": "f8b4a3a2cb511d126375ac2050d092aea850f812b91c0767fa90870abf28be38",
+      "bytes": 12307
+    },
+    "tests/test_release_composition.py": {
+      "sha256": "d6bab9e8cf18325b1008c28747cd0fa63bb757372761d89ed90f12c556a6a6b3",
+      "bytes": 2944
+    }
+  },
+  "unresolved_issues": [],
+  "blocking_issues": [],
+  "excluded_activity": {
+    "paid_calls": 0,
+    "model_outcomes_or_traces_read": false,
+    "source_or_code_edits": false,
+    "publication": false
+  },
+  "limitations": [
+    "AI-only review; human_review is false.",
+    "Synthetic public development dataset; no production healthcare validity claim."
+  ],
+  "final_receipt_at": "2026-10-08T22:06:30.674516+00:00",
+  "final_metadata_rebuild": {
+    "changed_since_independent_probes": [],
+    "all_recorded_file_receipts_rechecked": true,
+    "ai_reviewed_status_confirmed": true
+  },
+  "publication_cleanup_reconciliation": {
+    "checked_at": "2026-10-08T22:08:16.601489+00:00",
+    "scope": "Receipt-only reconciliation after publication portability cleanup; no execution behavior or dataset change.",
+    "validator_exact_change": "The sole validator byte change replaces the machine-local test-audit SKILL.md reference with the logical label test-audit/SKILL.md; authoring skill, outside this release. This string occurs only in new_test_authoring_gate audit evidence output. Restoring the old label reproduces the previous exact validator SHA256.",
+    "changed_receipts": [
+      {
+        "path": "reviews/integration-check.json",
+        "previous": {
+          "sha256": "e8f51e3f416e7517455ab9206291f06b473ff432ec99a6c948fd5e19cd26f59f",
+          "bytes": 17730
+        },
+        "current": {
+          "sha256": "4c6070e52662df7d79990246426cbbc5632e7d5ef31219602cc68f85c5ea319f",
+          "bytes": 17737
+        }
+      },
+      {
+        "path": "scripts/validate_release.py",
+        "previous": {
+          "sha256": "ec4bf2fc3b64e9a63af59a5de6a0d86d17845d6626385713332d87c629ff40d3",
+          "bytes": 10065
+        },
+        "current": {
+          "sha256": "5821dec106f6205be64fcffe43b7fcab1311f69802a6bc82d10736db2571e60f",
+          "bytes": 10072
+        }
+      }
+    ],
+    "unchanged_receipt_count": 36,
+    "unchanged_receipt_paths": [
+      "authoring-contract.json",
+      "baseline-protection.json",
+      "data/benchmark.jsonl",
+      "dataset/agent_inputs.jsonl",
+      "dataset/answers.jsonl",
+      "dataset/cases.jsonl",
+      "dataset/manifest.json",
+      "dataset/pairs.jsonl",
+      "dataset/tool_contract.json",
+      "evaluation-protocol.json",
+      "examples/agent-input.json",
+      "examples/answer-key.json",
+      "examples/case.json",
+      "schemas/agent-input.schema.json",
+      "schemas/answer.schema.json",
+      "schemas/case.schema.json",
+      "schemas/response.schema.json",
+      "scripts/agent_view.py",
+      "scripts/build_dataset.py",
+      "scripts/build_release.py",
+      "scripts/run_pilot.py",
+      "scripts/validate_dataset.py",
+      "source/provenance.json",
+      "source/templates.json",
+      "source/workflows/appeals-retained.json",
+      "source/workflows/appeals-sources.json",
+      "source/workflows/appeals.json",
+      "source/workflows/equipment-retained.json",
+      "source/workflows/equipment-sources.json",
+      "source/workflows/equipment.json",
+      "source/workflows/prior_auth-retained.json",
+      "source/workflows/prior_auth-sources.json",
+      "source/workflows/prior_auth.json",
+      "tests/test_dataset_integrity.py",
+      "tests/test_pilot_execution.py",
+      "tests/test_release_composition.py"
+    ],
+    "integration_report": "Regenerated integration record inspected: ai_reviewed, passed, 19 tests, exit 0. Expected current SHA256 verified.",
+    "review_path_cleanup": "Removed the machine-local interpreter prefix from this review executable argv; logical basename and command retained.",
+    "behavioral_scope_unchanged": true,
+    "broad_probes_rerun": false,
+    "case_api_calls": 0,
+    "publication_performed": false
+  }
+}

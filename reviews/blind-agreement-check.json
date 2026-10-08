@@ -1,0 +1,13 @@
+{
+  "model": "gpt-6-astra",
+  "human_review": false,
+  "decision_agreement": 90,
+  "finish_action_agreement": 60,
+  "stop_urgency_agreement": 30,
+  "disagreements": [],
+  "packet_bytes_unchanged": {
+    "equipment": true,
+    "prior_auth": true,
+    "appeals": true
+  }
+}

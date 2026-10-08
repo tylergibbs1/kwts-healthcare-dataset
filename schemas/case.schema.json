@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KWTS environment case",
+  "type": "object",
+  "required": [
+    "case_id",
+    "title",
+    "instruction",
+    "as_of",
+    "role",
+    "permissions",
+    "available_tools",
+    "artifact_index",
+    "initial_artifacts",
+    "reveals"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^case-[a-f0-9]{16}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "instruction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "permissions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "boolean"
+      }
+    },
+    "available_tools": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "read_artifact",
+          "submit_authorization",
+          "send_appeal",
+          "fax_records",
+          "complete",
+          "escalate"
+        ]
+      }
+    },
+    "artifact_index": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "reference",
+          "label"
+        ],
+        "properties": {
+          "reference": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "initial_artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/artifact"
+      }
+    },
+    "reveals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "on_action",
+          "artifact"
+        ],
+        "properties": {
+          "on_action": {
+            "type": "object",
+            "required": [
+              "tool",
+              "arguments"
+            ],
+            "properties": {
+              "tool": {
+                "const": "read_artifact"
+              },
+              "arguments": {
+                "type": "object",
+                "required": [
+                  "reference"
+                ],
+                "properties": {
+                  "reference": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          },
+          "artifact": {
+            "$ref": "#/$defs/artifact"
+          },
+          "requires_refs": {
+            "type": "array",
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            },
+            "description": "References requiring successful reads before this artifact can be returned. A premature request returns read_prerequisite_not_met with read_first references and no artifact body."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "required": [
+        "reference",
+        "label",
+        "data"
+      ],
+      "properties": {
+        "reference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "data": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

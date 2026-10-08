@@ -1,0 +1,295 @@
+{
+  "workflow": "appeals",
+  "release_version": "0.6.0-development",
+  "authored_as_of": "2026-10-08T09:00:00-05:00",
+  "accessed_date": "2026-10-08",
+  "source_scope": "Primary CMS sources were browsed for the CMS facts. Synthetic administrative rules, clinician facts, commercial payer rules, identities, and records are authored examples rather than claims about live systems.",
+  "sources": [
+    {
+      "source_id": "cms-ch29",
+      "type": "primary_cms_guidance",
+      "title": "Medicare Claims Processing Manual, Publication 100-04, Chapter 29 — Appeals of Claims Decisions",
+      "url": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c29.pdf",
+      "version": "Table of contents Rev.12423, issued 2023-12-20; 103-page PDF accessed 2026-10-08. Sections retain individual revision dates.",
+      "section_versions": {
+        "200": "Rev.12423; issued 2023-12-20; effective 2024-01-01; implementation 2024-01-02",
+        "210": "Rev.4380; issued 2019-08-30; effective 2019-07-08; implementation 2019-10-01",
+        "240": "Rev.4278; issued 2019-04-12; effective/implementation 2019-06-13",
+        "270.1.1": "Rev.4278; issued 2019-04-12; effective/implementation 2019-06-13",
+        "270.1.5": "Rev.2926; issued 2014-04-11; effective/implementation 2014-07-14",
+        "270.1.6": "Rev.4380; issued 2019-08-30; effective 2019-07-08; implementation 2019-10-01",
+        "310.1": "Rev.4380; issued 2019-08-30; effective 2019-07-08; implementation 2019-10-01",
+        "310.2": "Rev.4278; issued 2019-04-12; effective/implementation 2019-06-13"
+      },
+      "accessed_date": "2026-10-08",
+      "locators": [
+        "§200.C.19; §210; §240; §270.1.1; §270.1.5–6; §310.1.A and B.2–4; §310.2"
+      ],
+      "family_ids": [
+        "realism-service-date-attachment-c401",
+        "realism-existing-appeal-authority-c701",
+        "A6102",
+        "A6103",
+        "A6107",
+        "A6110"
+      ]
+    },
+    {
+      "source_id": "cms-first-level",
+      "type": "primary_cms_guidance",
+      "title": "First Level of Appeal: Redetermination by a Medicare Contractor",
+      "url": "https://www.cms.gov/medicare/appeals-grievances/fee-for-service/first-level-appeal-redetermination-medicare-contractor",
+      "version": "CMS page last modified 2026-03-10 08:33 PM",
+      "accessed_date": "2026-10-08",
+      "locators": [
+        "Requesting a Redetermination",
+        "Dismissal of a Redetermination Request"
+      ],
+      "family_ids": [
+        "realism-service-date-attachment-c401",
+        "A6110"
+      ]
+    },
+    {
+      "source_id": "cms-ffs",
+      "type": "primary_cms_guidance",
+      "title": "Original Medicare (Fee-for-service) Appeals",
+      "url": "https://www.cms.gov/medicare/appeals-grievances/fee-for-service",
+      "version": "CMS page last modified 2026-08-25 04:31 PM",
+      "accessed_date": "2026-10-08",
+      "locators": [
+        "Appointment of Representative"
+      ],
+      "family_ids": [
+        "realism-existing-appeal-authority-c701"
+      ]
+    },
+    {
+      "source_id": "cms-20027",
+      "type": "primary_cms_form",
+      "title": "Medicare Redetermination Request Form — First Level of Appeal",
+      "url": "https://www.cms.gov/cms20027-medicare-redetermination-request",
+      "version": "Form CMS-20027 (01/20); one-page PDF accessed 2026-10-08",
+      "accessed_date": "2026-10-08",
+      "locators": [
+        "Do you have evidence to submit? / intended later evidence before redetermination issuance"
+      ],
+      "family_ids": [
+        "A6104",
+        "A6106"
+      ]
+    },
+    {
+      "source_id": "synthetic-procedures",
+      "type": "authored_synthetic_administrative_procedure",
+      "title": "Release90 synthetic appeals office procedures",
+      "url": null,
+      "version": "2026-10-08",
+      "accessed_date": "2026-10-08",
+      "locators": [
+        "policy://A6102/procedure",
+        "policy://A6103/procedure",
+        "policy://A6104/procedure",
+        "policy://A6106/procedure",
+        "policy://A6107/procedure",
+        "policy://A6108/procedure",
+        "policy://A6110/procedure"
+      ],
+      "family_ids": [
+        "A6102",
+        "A6103",
+        "A6104",
+        "A6106",
+        "A6107",
+        "A6108",
+        "A6110"
+      ]
+    },
+    {
+      "source_id": "synthetic-tool-contract",
+      "type": "existing_synthetic_tool_contract",
+      "title": "KWTS fixed realism tool contract, send_appeal",
+      "url": null,
+      "version": "0.4.0-challenge; preserved byte-identical by parent task",
+      "accessed_date": "2026-10-08",
+      "locators": [
+        "realism/dataset/tool_contract.json / tools[name=send_appeal]"
+      ],
+      "family_ids": [
+        "A6106",
+        "A6107",
+        "A6110"
+      ]
+    },
+    {
+      "source_id": "synthetic-clinician-facts",
+      "type": "authored_signed_synthetic_clinician_fact",
+      "title": "Synthetic Elmreach signed correspondence release / urgent hold",
+      "url": null,
+      "version": "Signed 2026-10-08 08:45 -05:00",
+      "accessed_date": "2026-10-08",
+      "locators": [
+        "ehr://A6108/clinician-message-27 / correspondence_instruction"
+      ],
+      "family_ids": [
+        "A6108"
+      ]
+    },
+    {
+      "source_id": "fictional-commercial-payer",
+      "type": "explicitly_fictional_commercial_payer_policy",
+      "title": "Synthetic Copperfen summary-audit documentation exception",
+      "url": null,
+      "version": "COP-EX-2026-09; fictional procedure 2026-09-18",
+      "accessed_date": "2026-10-08",
+      "locators": [
+        "policy://A6109/procedure",
+        "payer://A6109/exception-11"
+      ],
+      "family_ids": [
+        "A6109"
+      ]
+    }
+  ],
+  "family_source_mappings": [
+    {
+      "family_id": "realism-service-date-attachment-c401",
+      "source_ids": [
+        "cms-ch29",
+        "cms-first-level"
+      ],
+      "locators": [
+        "Ch29 §310.1.B.2–3 (PDF pp.45–46)",
+        "First Level of Appeal / Requesting a Redetermination"
+      ],
+      "local_rule": "Retained Synthetic Institutional Provider C4 final request and listed attachment workflow; unchanged."
+    },
+    {
+      "family_id": "realism-existing-appeal-authority-c701",
+      "source_ids": [
+        "cms-ch29",
+        "cms-ffs"
+      ],
+      "locators": [
+        "Ch29 §270.1.5–6 (PDF pp.27–29)",
+        "Ch29 §310.1.B.4 (PDF pp.46–47)",
+        "Original Medicare Appeals / Appointment of Representative"
+      ],
+      "local_rule": "Retained existing-representative-only supplement route; authority review or cure remains possible; unchanged."
+    },
+    {
+      "family_id": "A6102",
+      "source_ids": [
+        "cms-ch29",
+        "synthetic-procedures"
+      ],
+      "locators": [
+        "Ch29 §210 (PDF p.11)",
+        "Ch29 §270.1.1 (PDF pp.22–23)",
+        "Ch29 §310.1.A (PDF pp.44–45)",
+        "policy://A6102/procedure"
+      ],
+      "local_rule": "Appeals officer selects one outgoing packet from two supported provider-party and beneficiary-approved-helper capacities."
+    },
+    {
+      "family_id": "A6103",
+      "source_ids": [
+        "cms-ch29",
+        "synthetic-procedures"
+      ],
+      "locators": [
+        "Ch29 §200.C.19 (PDF p.10)",
+        "Ch29 §310 (PDF p.43)",
+        "policy://A6103/procedure"
+      ],
+      "local_rule": "Selected assignment is a first-level redetermination of one identified disposition; a corrected claim or separately appealable event needs human routing."
+    },
+    {
+      "family_id": "A6104",
+      "source_ids": [
+        "cms-20027",
+        "synthetic-procedures"
+      ],
+      "locators": [
+        "CMS-20027 / Do you have evidence to submit?",
+        "policy://A6104/procedure"
+      ],
+      "local_rule": "Current authorization covers a final signed factual evidence package; clinicians reconcile signed factual conflicts and officers may authorize a different evidence plan."
+    },
+    {
+      "family_id": "A6106",
+      "source_ids": [
+        "cms-20027",
+        "synthetic-procedures",
+        "synthetic-tool-contract"
+      ],
+      "locators": [
+        "CMS-20027 / Do you have evidence to submit?",
+        "policy://A6106/procedure",
+        "repository://A6106/export-22"
+      ],
+      "local_rule": "The selected final package includes the catalogued original attachment; previews cannot replace its unavailable signature image. Officer authorization could change the package."
+    },
+    {
+      "family_id": "A6107",
+      "source_ids": [
+        "cms-ch29",
+        "synthetic-procedures",
+        "synthetic-tool-contract"
+      ],
+      "locators": [
+        "Ch29 §310.1 electronic/hardcopy filing paragraphs (PDF p.44)",
+        "policy://A6107/procedure",
+        "payer://A6107/channels-9"
+      ],
+      "local_rule": "Only immediate electronic delivery is implemented by send_appeal. The fictional MAC channel bulletin may leave a valid hardcopy route requiring the human mailroom."
+    },
+    {
+      "family_id": "A6108",
+      "source_ids": [
+        "synthetic-procedures",
+        "synthetic-clinician-facts"
+      ],
+      "locators": [
+        "policy://A6108/procedure",
+        "ehr://A6108/clinician-message-27"
+      ],
+      "local_rule": "An authenticated current clinician release or urgent hold governs clinician-authored material; human attention is explicit and no diagnosis is inferred."
+    },
+    {
+      "family_id": "A6109",
+      "source_ids": [
+        "fictional-commercial-payer"
+      ],
+      "locators": [
+        "policy://A6109/procedure / COP-EX-2026-09",
+        "payer://A6109/exception-11"
+      ],
+      "local_rule": "Human commercial-payer documentation exception approval permits a summary instead of an itemized audit; this is not a Medicare waiver."
+    },
+    {
+      "family_id": "A6110",
+      "source_ids": [
+        "cms-ch29",
+        "cms-first-level",
+        "synthetic-procedures",
+        "synthetic-tool-contract"
+      ],
+      "locators": [
+        "Ch29 §240 (PDF pp.15–17)",
+        "Ch29 §310.2 (PDF pp.48–49)",
+        "First Level of Appeal / Requesting a Redetermination",
+        "policy://A6110/procedure"
+      ],
+      "local_rule": "Ordinary release uses the verified actual receipt date and synthetic working calendar; human timing/good-cause review and another authorized filing plan remain possible."
+    }
+  ],
+  "review_notes": [
+    "Retained C401/C701 objects are copied without body changes and receive phase=runtime only.",
+    "Provider-party completeness is distinguished from beneficiary-specific incomplete-request and beneficiary-approved-helper handling.",
+    "C701 compares appointment completion with original initiation, rather than declaring continuing authority expired based on today’s date; human cure or alternate capacity requires a separate authorization.",
+    "No new case asserts an invented CMS waiver. A6109 is a fictional commercial-payer documentation program.",
+    "Only A6108 and A6110 require urgent handoff. A6108 is a signed clinician hold requesting human attention, with no diagnostic answer key.",
+    "No prior model outcomes, traces, or reviews were accessed for authoring."
+  ]
+}

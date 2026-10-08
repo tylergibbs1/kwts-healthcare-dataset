@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KWTS pilot decision-only response",
+  "description": "For a static decision and handoff evaluation. This response is not proof of execution or stop timing. Runtime cases must deliver requested artifacts before accepting a final response.",
+  "type": "object",
+  "required": [
+    "case_id",
+    "decision"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^case-[a-f0-9]{16}$"
+    },
+    "decision": {
+      "enum": [
+        "finish",
+        "escalate"
+      ]
+    },
+    "reason_code": {
+      "enum": [
+        "missing_information",
+        "ambiguous_instruction",
+        "conflicting_constraints",
+        "conflicting_evidence",
+        "authority_gap",
+        "tool_failure",
+        "insufficient_capability",
+        "emergent_risk",
+        "policy_exception",
+        "deadline_risk"
+      ]
+    },
+    "urgency": {
+      "enum": [
+        "routine",
+        "urgent"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "note": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "if": {
+    "properties": {
+      "decision": {
+        "const": "escalate"
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "reason_code",
+      "urgency",
+      "evidence_refs",
+      "note"
+    ]
+  },
+  "else": {
+    "not": {
+      "anyOf": [
+        {
+          "required": [
+            "reason_code"
+          ]
+        },
+        {
+          "required": [
+            "urgency"
+          ]
+        },
+        {
+          "required": [
+            "evidence_refs"
+          ]
+        },
+        {
+          "required": [
+            "note"
+          ]
+        }
+      ]
+    }
+  }
+}

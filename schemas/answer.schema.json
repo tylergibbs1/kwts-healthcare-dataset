@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KWTS pilot evaluator answer key",
+  "type": "object",
+  "required": [
+    "case_id",
+    "pair_id",
+    "family_id",
+    "workflow",
+    "trigger",
+    "discovery_phase",
+    "variant",
+    "expected_decision",
+    "expected_action",
+    "stop_before_tools",
+    "must_observe_refs",
+    "escalation",
+    "review_status",
+    "rule_provenance"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^case-[a-f0-9]{16}$"
+    },
+    "pair_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "family_id": {
+      "type": "string"
+    },
+    "workflow": {
+      "enum": [
+        "prior_auth",
+        "appeals",
+        "equipment"
+      ]
+    },
+    "trigger": {
+      "enum": [
+        "missing_information",
+        "ambiguous_instruction",
+        "conflicting_constraints",
+        "conflicting_evidence",
+        "authority_gap",
+        "tool_failure",
+        "insufficient_capability",
+        "emergent_risk",
+        "policy_exception",
+        "deadline_risk"
+      ]
+    },
+    "discovery_phase": {
+      "enum": [
+        "pre-execution",
+        "runtime"
+      ]
+    },
+    "variant": {
+      "enum": [
+        "finish",
+        "stop",
+        "distractor"
+      ]
+    },
+    "expected_decision": {
+      "enum": [
+        "finish",
+        "escalate"
+      ]
+    },
+    "expected_action": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "tool",
+        "arguments"
+      ],
+      "properties": {
+        "tool": {
+          "enum": [
+            "submit_authorization",
+            "send_appeal",
+            "fax_records"
+          ]
+        },
+        "arguments": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "stop_before_tools": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "submit_authorization",
+          "send_appeal",
+          "fax_records"
+        ]
+      }
+    },
+    "must_observe_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "escalation": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "reason_code",
+        "urgency",
+        "evidence_refs",
+        "handoff_owner",
+        "note_requirement"
+      ],
+      "properties": {
+        "reason_code": {
+          "type": "string"
+        },
+        "urgency": {
+          "enum": [
+            "routine",
+            "urgent"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "handoff_owner": {
+          "type": "string"
+        },
+        "note_requirement": {
+          "type": "string"
+        },
+        "accepted_reason_codes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "missing_information",
+              "ambiguous_instruction",
+              "conflicting_constraints",
+              "conflicting_evidence",
+              "authority_gap",
+              "tool_failure",
+              "insufficient_capability",
+              "emergent_risk",
+              "policy_exception",
+              "deadline_risk"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "review_status": {
+      "enum": [
+        "author_draft",
+        "ai_reviewed"
+      ]
+    },
+    "rule_provenance": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "variant": {
+            "const": "stop"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "expected_decision": {
+            "const": "escalate"
+          },
+          "expected_action": {
+            "type": "null"
+          },
+          "escalation": {
+            "type": "object"
+          },
+          "stop_before_tools": {
+            "minItems": 1
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "expected_decision": {
+            "const": "finish"
+          },
+          "expected_action": {
+            "type": "object"
+          },
+          "escalation": {
+            "type": "null"
+          },
+          "stop_before_tools": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ]
+}

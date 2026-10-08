@@ -1,0 +1,229 @@
+{
+  "created_at": "2026-10-08T22:09:09.755141+00:00",
+  "version": "0.6.0-development",
+  "case_count": 90,
+  "family_count": 30,
+  "split": "public_development",
+  "private_test_set": false,
+  "human_review": false,
+  "case_provider_calls_before_freeze": 0,
+  "commitment_scope": "Exact reviewed dataset, source, schema, host/evaluator, tests, review records and protocol bytes before the first release90 case request. Publication prose and subsequently added run/report artifacts are outside this commitment.",
+  "models": [
+    "claude-haiku-5-5",
+    "claude-sonnet-5-5",
+    "claude-opus-5-5",
+    "claude-haiku-4-5-20251001"
+  ],
+  "harness_sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+  "files": {
+    ".gitignore": {
+      "sha256": "59ff6e5e5a466018bcf843269790e6a1c12ecb8022b0db8dbf57b186867477e2",
+      "bytes": 82
+    },
+    "LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "NOTICE": {
+      "sha256": "a7385040db93906ae59c076f3331ac7a81d88c3d277bbc63a18738e2eaa2fc2c",
+      "bytes": 688
+    },
+    "authoring-contract.json": {
+      "sha256": "bc5257d63c668eb934922c9689e732594f26ddc714d5c837cf40c96250bb7ddb",
+      "bytes": 3319
+    },
+    "baseline-protection.json": {
+      "sha256": "00383a6f8b4e8e94103c20e623a91ead61c78dbc65e3d18f46d4e2b8c0b9b001",
+      "bytes": 16316
+    },
+    "data/benchmark.jsonl": {
+      "sha256": "5d1a1fac28897bfb8eb597b1b2f327afb713f181a6ba22d4b0d7c836041dacd7",
+      "bytes": 253855
+    },
+    "dataset/agent_inputs.jsonl": {
+      "sha256": "62f8da60e7221b06858319b8f23a47288d9d8b97d02df6732175953de2f85cfb",
+      "bytes": 236109
+    },
+    "dataset/answers.jsonl": {
+      "sha256": "c9edbe3b1a2fd9961fe74dec1a25ed2af409e6d02171f38fe0cea8d205a38086",
+      "bytes": 104636
+    },
+    "dataset/cases.jsonl": {
+      "sha256": "feb5710f6886c1511dd45d6ee5aae4c2f0dda96bb43c3296c426e92b13e38345",
+      "bytes": 464285
+    },
+    "dataset/manifest.json": {
+      "sha256": "f7171cd1bbcea69261bffc021c6381a66f780e97ba4de3910cfcae219351f34f",
+      "bytes": 10327
+    },
+    "dataset/pairs.jsonl": {
+      "sha256": "9934c24c1cc465a5f11b818fc96865aa658f274d6165f156ae0cba800fc7c579",
+      "bytes": 8571
+    },
+    "dataset/tool_contract.json": {
+      "sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06",
+      "bytes": 8508
+    },
+    "evaluation-protocol.json": {
+      "sha256": "d332a9bf529084eb3098f82e287784ae7dece789a240716e1cb684815c6ce325",
+      "bytes": 2868
+    },
+    "examples/agent-input.json": {
+      "sha256": "7d4c9c6344d0febb6c67279d66d1270ab24470bf6f2d44a339f46841388d5c75",
+      "bytes": 5720
+    },
+    "examples/answer-key.json": {
+      "sha256": "ae46f44cfe491a3bbc82663b94786d4f06c1501d855654ffe12bdcb27f44f9d9",
+      "bytes": 1777
+    },
+    "examples/case.json": {
+      "sha256": "208b457513f7cbd9cddcc77a65ad5fa49c8b3dc6ac26b7d9c6571ed824be8357",
+      "bytes": 5737
+    },
+    "model-availability.json": {
+      "sha256": "6d495ab9dabb42061b4de2777cda8b00f36940b2858e2bc5ed291f670232a7db",
+      "bytes": 1941
+    },
+    "review_packets/appeals.jsonl": {
+      "sha256": "f64efcf8f4eed9591b26049699d3cf6e2ca7996248f408a4f3e8d427f7cb6534",
+      "bytes": 166868
+    },
+    "review_packets/equipment.jsonl": {
+      "sha256": "e4d2564c3df8403d0066269f70f9a97df4b222f61ca28e25f36a4694fa79be74",
+      "bytes": 151399
+    },
+    "review_packets/prior_auth.jsonl": {
+      "sha256": "009b2ed7c098f2a2aee6ca056d6cb168dca5b41ef4381e65a25623c85914e869",
+      "bytes": 146018
+    },
+    "reviews/astra-blind-appeals.json": {
+      "sha256": "d71792121d1209985f345176fccc74117b19ca7ccbc4910f7a9a4082c1bfef12",
+      "bytes": 53590
+    },
+    "reviews/astra-blind-equipment.json": {
+      "sha256": "009b66cca9bdd3e1628883b51557b4a900f5e5e788bdbd798959391b04f748a1",
+      "bytes": 51499
+    },
+    "reviews/astra-blind-prior-auth.json": {
+      "sha256": "d7ed3a8a9dc9ed05be4fb42ec5fcea55bd3b00644aea64bd45383b8862d24a09",
+      "bytes": 41979
+    },
+    "reviews/astra-execution-review.json": {
+      "sha256": "23890bd95c7f0cabbd4981d11f760ffc5d9a5a9fb61bfaaefb1aa4d3f4a98cf7",
+      "bytes": 32045
+    },
+    "reviews/astra-source-key-review.json": {
+      "sha256": "a4624020833e36a145d89901df90b8893a813a5aaf2aa1a1543a02323314182b",
+      "bytes": 184693
+    },
+    "reviews/blind-agreement-check.json": {
+      "sha256": "8b0517c2b0e02742b94359dc7c5b511d0cfeed4209e789dda56b3732b8b8f313",
+      "bytes": 272
+    },
+    "reviews/integration-check.json": {
+      "sha256": "4c6070e52662df7d79990246426cbbc5632e7d5ef31219602cc68f85c5ea319f",
+      "bytes": 17737
+    },
+    "reviews/review-summary.json": {
+      "sha256": "336db09cfe5bd0514373ba475bb5fc3657fa49ce88ed597d8c81bb1f1f92306c",
+      "bytes": 2137
+    },
+    "schemas/agent-input.schema.json": {
+      "sha256": "95daf272e45c446eabd4557e2f537d7cf28aaa341465db00142f51e2947a4785",
+      "bytes": 2254
+    },
+    "schemas/answer.schema.json": {
+      "sha256": "183eb70564f73d3380dabfde118a267eea4ee11cb126983e6322e6d182aa671d",
+      "bytes": 4584
+    },
+    "schemas/case.schema.json": {
+      "sha256": "72dd623e432ff74975519aa8b3acd7f8f13d1e1cc690b0a321fca20955660478",
+      "bytes": 3551
+    },
+    "schemas/response.schema.json": {
+      "sha256": "1387b142a748eb97ed23ba781696bd0e1cda124b99af03c9b794e52e754f3506",
+      "bytes": 1855
+    },
+    "scripts/agent_view.py": {
+      "sha256": "2508236ce5b71325842140dcfd7b9411c31e79e79dee6b25594738a7dee3e7d3",
+      "bytes": 1146
+    },
+    "scripts/build_dataset.py": {
+      "sha256": "12dc9f34873ac120fc0e0fca8032076874519c414556d58e65028bfcdbc06b0a",
+      "bytes": 8758
+    },
+    "scripts/build_release.py": {
+      "sha256": "8f81ea61db8e3e8bba8989083908d4dc447c4ec392947b93b5a6f97045e0d48f",
+      "bytes": 30647
+    },
+    "scripts/run_pilot.py": {
+      "sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+      "bytes": 19160
+    },
+    "scripts/validate_dataset.py": {
+      "sha256": "e19f3bc7583e53867a0af4b54e81417dd9acf77811d94821e32c4e2e971449a5",
+      "bytes": 12334
+    },
+    "scripts/validate_release.py": {
+      "sha256": "5821dec106f6205be64fcffe43b7fcab1311f69802a6bc82d10736db2571e60f",
+      "bytes": 10072
+    },
+    "source/provenance.json": {
+      "sha256": "ef3d74f99d15627421bc4bd867e014ca4c2a0c5077dbb9ea4479cc40602d7344",
+      "bytes": 88134
+    },
+    "source/templates.json": {
+      "sha256": "9cc6f4d3e620b3eab43c39d58a852b5af0ae9dd150e5dbde8a06c26ac50ce17a",
+      "bytes": 220372
+    },
+    "source/workflows/appeals-retained.json": {
+      "sha256": "949ee0728460716084499974270231d717d228846c49db57645a8aef5c3ce8d6",
+      "bytes": 13484
+    },
+    "source/workflows/appeals-sources.json": {
+      "sha256": "e659d4da27ecc46bb03a0427a1e1afe75ea1534f729470f9187fd9ee9a433e56",
+      "bytes": 11176
+    },
+    "source/workflows/appeals.json": {
+      "sha256": "2f0fb209e33969513879a9ea7516144d935f0ecd8f90eace10dd475a9a7ef6a0",
+      "bytes": 72545
+    },
+    "source/workflows/equipment-retained.json": {
+      "sha256": "1c579ecdbd56828a688ebc59c7340bd1b70b331a284717f14bcea103e1035082",
+      "bytes": 5921
+    },
+    "source/workflows/equipment-sources.json": {
+      "sha256": "ccd80c9e846afc2f4f9ee8305ca98e1f53ce8ab62bf836c0a322e69c09cdbad0",
+      "bytes": 12783
+    },
+    "source/workflows/equipment.json": {
+      "sha256": "75708b4169c1a1b1e2ef92beae2cd0f737e2b4842e67cc42e58be78a5e619a3d",
+      "bytes": 70436
+    },
+    "source/workflows/prior_auth-retained.json": {
+      "sha256": "ae7ac8fa7d5323f38633e51fea9d25d42af5245699f5eaa67aaac10635a14481",
+      "bytes": 13610
+    },
+    "source/workflows/prior_auth-sources.json": {
+      "sha256": "2f577006a001facdcfada998260633bf66fbdeb120124b2312dc7e122c04491e",
+      "bytes": 9368
+    },
+    "source/workflows/prior_auth.json": {
+      "sha256": "bb603c8bcb3daa4e24c1d5e76fb02076d4f037e578c7c0bac7b9a87e652f739e",
+      "bytes": 67281
+    },
+    "tests/test_dataset_integrity.py": {
+      "sha256": "d7a453229435f282d36f51b0da926e8c0e02ba7f4d59f6839549456f942b175f",
+      "bytes": 4181
+    },
+    "tests/test_pilot_execution.py": {
+      "sha256": "f8b4a3a2cb511d126375ac2050d092aea850f812b91c0767fa90870abf28be38",
+      "bytes": 12307
+    },
+    "tests/test_release_composition.py": {
+      "sha256": "d6bab9e8cf18325b1008c28747cd0fa63bb757372761d89ed90f12c556a6a6b3",
+      "bytes": 2944
+    }
+  },
+  "publication_plan": "Publish this freeze and reviewed dataset as an initial GitHub commit before starting case API calls. Record the remote commit and freeze hash in the run report."
+}
