@@ -1,0 +1,217 @@
+{
+  "version": "0.7.0-challenge-candidate",
+  "commitment_scope": "protected_challenge_test",
+  "created_at": "2026-10-08T23:58:45.439933+00:00",
+  "provider_case_calls_at_creation": 0,
+  "cases": 30,
+  "families": 10,
+  "repetitions_per_model": 5,
+  "planned_participant_episodes": 450,
+  "commitment_algorithm": "SHA256(b'KWTS-v0.7-protected\\x00' + artifact_id.encode('utf-8') + b'\\x00' + salt_32_bytes + exact_file_bytes)",
+  "salt_policy": "Independent cryptographically random 32-byte salt for each protected artifact. Salt and path mapping remain private until retirement.",
+  "protected_artifacts": [
+    {
+      "artifact_id": "protected-001",
+      "salted_sha256": "251738e6a5e1654943648094e4edea7240b80122ec0092c4c7ed555bf6f57b6c"
+    },
+    {
+      "artifact_id": "protected-002",
+      "salted_sha256": "271c992af17f9b9556966ed01d6cd263702bdbc7fa0e889fe3bbdc31bb028cce"
+    },
+    {
+      "artifact_id": "protected-003",
+      "salted_sha256": "85f241ecf967bf0c41fb439ce4d4590f5a04e7b25610be892f971d4bfbd62d28"
+    },
+    {
+      "artifact_id": "protected-004",
+      "salted_sha256": "f1cff7d1c3d7b1025c6b149fd3ae09a935f2d60e1652ec6a0d359c7483988943"
+    },
+    {
+      "artifact_id": "protected-005",
+      "salted_sha256": "499389f2f76493b9b65a394e1f8909610acd7a377570b23c4c627d1c2081ed57"
+    },
+    {
+      "artifact_id": "protected-006",
+      "salted_sha256": "113ffbc41d31888cc7bb40032f987c3696b6186144b5868a5788d56872a5db6b"
+    },
+    {
+      "artifact_id": "protected-007",
+      "salted_sha256": "a5ad6089121fa9d8b91d52b31dbb7cc300fc1eb85e905942bc27c6292bb65792"
+    },
+    {
+      "artifact_id": "protected-008",
+      "salted_sha256": "65e960e180b65afe6d53903ee0ad1dfd9ea68ab79b8af4053c0095d617252f0f"
+    },
+    {
+      "artifact_id": "protected-009",
+      "salted_sha256": "e52ababee1a7fb30278e5c1d918a8060e58650ee79cc6d0b9bb2f975a6ae7604"
+    },
+    {
+      "artifact_id": "protected-010",
+      "salted_sha256": "3b532ca3857032d9388464adae3351af99b44bff472144bf6af497ca4511fafb"
+    },
+    {
+      "artifact_id": "protected-011",
+      "salted_sha256": "6939f8e72cef2a0cca04378d7a9dbdc8ce9e60e5a1cf9323bc224af47ed2e729"
+    },
+    {
+      "artifact_id": "protected-012",
+      "salted_sha256": "b5a4e9efb68f4985d63024ac18b62643ad583ea561c1c28c048e16b969bd8799"
+    },
+    {
+      "artifact_id": "protected-013",
+      "salted_sha256": "eaf53a6384a38f037902285272f7a325c7770e8c8dbc70bf0413788f94d97e9c"
+    },
+    {
+      "artifact_id": "protected-014",
+      "salted_sha256": "f0a7659992016a1a5849fa4083001aca0bfd251d86299a8f446cafd30f18b59c"
+    },
+    {
+      "artifact_id": "protected-015",
+      "salted_sha256": "b6dc5815dc472c9e50ef2d53d7ba0a247c45b1646b4d14ce81980801a7c5ddd9"
+    },
+    {
+      "artifact_id": "protected-016",
+      "salted_sha256": "afec246dab09e2e83628ed9277f30f9d53732a406fb23cc3c131a67cd8dd842f"
+    },
+    {
+      "artifact_id": "protected-017",
+      "salted_sha256": "b7e31096625d9b6d90194fef4a7e65399a7aa575a3c65f5fc1d51694c186d98d"
+    },
+    {
+      "artifact_id": "protected-018",
+      "salted_sha256": "592494844d64349a6975fe62267eff675d02128ccb8a07839d0f3b0623a4cc9f"
+    },
+    {
+      "artifact_id": "protected-019",
+      "salted_sha256": "932cf49dd65480d0c07abe57235c8f45be5480b7d368e067a8fb901c492325f3"
+    },
+    {
+      "artifact_id": "protected-020",
+      "salted_sha256": "65e8f5a2b4482fc697116368b1c7f729def46aa7a418192fcda27f266eb7c773"
+    },
+    {
+      "artifact_id": "protected-021",
+      "salted_sha256": "1e21e2b197ab16f2616fe2d2886d55d9185430fd680a826e31eda6d27827c5a7"
+    },
+    {
+      "artifact_id": "protected-022",
+      "salted_sha256": "b92b4cbd7a048d016be2e4708f986244045c07e07c2fb985bd4507c4f2f5b3af"
+    },
+    {
+      "artifact_id": "protected-023",
+      "salted_sha256": "8e130fdc6f265f37b6f1b14b1bfb45e8005555da38410ecede43e57fff3bb51b"
+    },
+    {
+      "artifact_id": "protected-024",
+      "salted_sha256": "51a6ff076a106da84604469e76263aa104538b6b595e7f86afec99c48c950a22"
+    },
+    {
+      "artifact_id": "protected-025",
+      "salted_sha256": "35fdf5f8cb0a5827ba54c65181e3148178ba9295b3effc5be53476b6010c3636"
+    },
+    {
+      "artifact_id": "protected-026",
+      "salted_sha256": "b7d9128e080d7549ae08ad1a0ce2effd25141516ca28ae48f74f26dad9493142"
+    },
+    {
+      "artifact_id": "protected-027",
+      "salted_sha256": "1a1e471326e62a67c2aa24ca09179fe64638d65262f95a4b8763138001f92fe8"
+    },
+    {
+      "artifact_id": "protected-028",
+      "salted_sha256": "5afc4adb473d6f6741994a6e2ffe11c45e35a6a27c48f4d7db93d696d76d6b6c"
+    },
+    {
+      "artifact_id": "protected-029",
+      "salted_sha256": "205614d4736ba073196a1ec91db063a1a35408d451ee6a615811cc639048b83f"
+    },
+    {
+      "artifact_id": "protected-030",
+      "salted_sha256": "d6da12846f96078a3f8b83805177d1edf5bae8f377d087659ee5e3406a5b1c11"
+    },
+    {
+      "artifact_id": "protected-031",
+      "salted_sha256": "e922332bbe1695078b6acc0cd3d399d32bec10985496107b40d2e1bb91cfa6a1"
+    },
+    {
+      "artifact_id": "protected-032",
+      "salted_sha256": "6facbda232767657818fac747e1ba2297ea4cabcb70c9fab14dcc561b5be3c6f"
+    },
+    {
+      "artifact_id": "protected-033",
+      "salted_sha256": "dd33915970686baa19e5f75910bb09930243b0fff2806a7544eb5e94f9dd1d7f"
+    },
+    {
+      "artifact_id": "protected-034",
+      "salted_sha256": "eaf8267eb6b6cf270f19d5ff0f0735660064cc93d28f445410c4a968ba248df0"
+    },
+    {
+      "artifact_id": "protected-035",
+      "salted_sha256": "df16c2f519e78473399a23ae029fb27780632d4a2614f99203c14d6b82bd0188"
+    },
+    {
+      "artifact_id": "protected-036",
+      "salted_sha256": "c2a6bff7f266520e24bc4f57f454cf8541e60887526814a579e81996431143bc"
+    },
+    {
+      "artifact_id": "protected-037",
+      "salted_sha256": "92f353607d726cc4b582245257c4d5819d816fe91341cddfccc62fbbba0531d2"
+    },
+    {
+      "artifact_id": "protected-038",
+      "salted_sha256": "0fa704bc38295365ec120327342d93dab3656a699340f6688453e855ea18b2c0"
+    },
+    {
+      "artifact_id": "protected-039",
+      "salted_sha256": "071445c1df310d5c649d952de660adf04507e0830c5ee7ff5c747b40620fa987"
+    },
+    {
+      "artifact_id": "protected-040",
+      "salted_sha256": "761ee822622108dde2f133cb320265118f29be3d7b3c1034f852f1a363d248ba"
+    },
+    {
+      "artifact_id": "protected-041",
+      "salted_sha256": "dedaf4fc718134ce7c7d01879dca1baf96ed2f639f04378356369de500db519a"
+    },
+    {
+      "artifact_id": "protected-042",
+      "salted_sha256": "b456f39e75dfaef7e82b1e4127272631ffc38bc3d7536f9382c8109e246bc350"
+    },
+    {
+      "artifact_id": "protected-043",
+      "salted_sha256": "9f0619f7026b7ea2629beffc8ede14a8ff4efc04df2d80b7a9c6ce60286fcf4d"
+    },
+    {
+      "artifact_id": "protected-044",
+      "salted_sha256": "c3960a9ff327c25e79d5f9d738b1ba982c6a572b64c78524ff8637400f3c1c9a"
+    }
+  ],
+  "public_file_sha256": {
+    "OPENAI-HARNESS.md": "141569ea650fa773bc0d6e39575d1548b4904b09673173505d0bbd9f8c358c27",
+    "PRE-RUN-REVIEW.json": "9a4ad158552271d57e594f977b0341330cec0f2107705e0cac9941d479e7a00d",
+    "README.md": "0e2f614034b4fb702fa2fa070130cb5063d9331e8f0132a60e73b01f036e6e09",
+    "evaluation-protocol.json": "50d36cd6a36496578deb5b939581cce3837770871100dfada7e0bce9cbcf6ae2",
+    "scripts/astra_runner.py": "913ffa645953815e3166934d0874098943b99b3265c6eab28d6dae6fd4651b78",
+    "scripts/build_challenge.py": "a2b0ebb8bc9ac42733f20845cc8a1e0fda97830f7c9d9c9e6a3a73e6ee599f9f",
+    "scripts/build_dataset.py": "12dc9f34873ac120fc0e0fca8032076874519c414556d58e65028bfcdbc06b0a",
+    "scripts/episode_session.py": "53cfeb17900686a32e7a3090ace6f17d0cd577dfcf55165f69fce25b44c399e9",
+    "scripts/legacy_v1_2.py": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+    "scripts/repeated_statistics.py": "8001d11369da89a403fa2e8b29b434ecb8ce2d55d59d82625b55a70d56a51037",
+    "scripts/replay_runs.py": "3aa53e6e8e2c8000e8699a91e83795f258940eefdb21296ff7e690a99ed79176",
+    "scripts/run_repeated.py": "7a88148113cc7765e95da7c7c42e537ef3511eb4da514cf6746856137d0bb1c5",
+    "scripts/scorer_controls.py": "92d79e8a66153fc9616f68a85a6335141420f307875571711b3080d1fa2efb9e",
+    "scripts/tool_contract.json": "f888492bc590a0e1391621f6306376d4e973f9e32220c67879dc37a2fff76e31",
+    "scripts/validate_dataset.py": "e19f3bc7583e53867a0af4b54e81417dd9acf77811d94821e32c4e2e971449a5",
+    "tests/fixtures/public-v0.6.json": "73adcf76cb99cbc4a2ed720dbf76769617aa8009f1326a5f7510edd5472b98b9",
+    "tests/fixtures/v0.6-tool-contract.json": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06",
+    "tests/helpers.py": "7896e8816582f0d65245b12cc5fbbb8a7e1317d753c257dc735fcb90dcaeb4d3",
+    "tests/test_astra_runner.py": "12a00cb609245395c1e1a9f74f1d04de0e0e12668016aec25fc294f49d1ae88e",
+    "tests/test_challenge_build.py": "455bfcf29767f40464a3b0f7c97724d764b81d5e2a6e86ad79c95ba6d7b680ad",
+    "tests/test_repeated_execution.py": "12ca4db451f1bf15abedd3e58ee75e8dd66d973b571c8b9eda8729890f33472f",
+    "tests/test_repeated_statistics.py": "ef79afce01482546e5e6339635d3735dea9105a27e5e223bba9b3cea250b6839",
+    "tests/test_replay_runs.py": "de25ec7d3250f4da2568128456860370d24343b080c7734e6d8c16c361528388"
+  },
+  "human_healthcare_validation": "pending",
+  "retirement_policy": "Active cases, keys and salts are not published automatically; reveal exact committed bytes only on retirement."
+}

@@ -1,0 +1,28 @@
+{
+  "version": "0.7.0-challenge-candidate",
+  "stage": "pre-run",
+  "created_at": "2026-10-08T23:58:45.439933+00:00",
+  "provider_case_calls": 0,
+  "cases": 30,
+  "families": 10,
+  "required_stops": 10,
+  "finishable_cases": 20,
+  "urgent_stops": 2,
+  "pre_execution_cases": 12,
+  "runtime_cases": 18,
+  "review_model": "gpt-6-astra",
+  "blind_case_decisions_reviewed": 30,
+  "blind_decision_key_agreement": 30,
+  "pre_run_reason_code_repairs": 6,
+  "remaining_key_blockers": 0,
+  "remaining_infrastructure_blockers": 0,
+  "meaningful_tests_passed": 25,
+  "historical_files_verified_unchanged": 228,
+  "human_healthcare_validation": "pending",
+  "validity_scope": "Synthetic fictional administrative controls and supplied clinician routing; no clinical or deployment-safety validation.",
+  "operational_limits": [
+    "Public commitment verification and review clearance are operator responsibilities.",
+    "The operator limits participant concurrency to one native worker plus one Astra child-agent worker.",
+    "Astra uses a distinct Codex scaffold and inference interface; model-only provider ranking is unsupported."
+  ]
+}
