@@ -1,0 +1,121 @@
+{
+  "record_type": "initial_public_dataset_download_verification",
+  "version": "0.6.0-development",
+  "github_initial_publication": {
+    "initial_public_commit": "18fc69d6287337b4afadfb21c55a0e6c0c5a9f19",
+    "pre_run_freeze_sha256": "364edd1ce730f7073f6ee69ecffb4026b2046664f53f6dbdc1171ee35c642909",
+    "anonymous_remote_freeze_matches": true,
+    "repository_url": "https://github.com/tylergibbs1/kwts-healthcare-dataset",
+    "commit_url": "https://github.com/tylergibbs1/kwts-healthcare-dataset/commit/18fc69d6287337b4afadfb21c55a0e6c0c5a9f19"
+  },
+  "hugging_face_initial_publication": {
+    "checked_at": "2026-10-08T22:15:42.585001+00:00",
+    "public_repository": "https://huggingface.co/datasets/Tylerbry1/kwts-healthcare-dataset",
+    "initial_dataset_commit": "5b421d342b0a5f654d6d5a0e82a8490f97c78ed1",
+    "anonymous_downloads": [
+      {
+        "file": "LICENSE",
+        "bytes": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "matches": true
+      },
+      {
+        "file": "NOTICE",
+        "bytes": 688,
+        "sha256": "a7385040db93906ae59c076f3331ac7a81d88c3d277bbc63a18738e2eaa2fc2c",
+        "matches": true
+      },
+      {
+        "file": "README.md",
+        "bytes": 8043,
+        "sha256": "4511a7d0ee932a0c86ec55f713087199df56c59c2e0ca054bf4d3108355b6295",
+        "matches": true
+      },
+      {
+        "file": "agent_inputs.jsonl",
+        "bytes": 236109,
+        "sha256": "62f8da60e7221b06858319b8f23a47288d9d8b97d02df6732175953de2f85cfb",
+        "matches": true
+      },
+      {
+        "file": "answers.jsonl",
+        "bytes": 104636,
+        "sha256": "c9edbe3b1a2fd9961fe74dec1a25ed2af409e6d02171f38fe0cea8d205a38086",
+        "matches": true
+      },
+      {
+        "file": "benchmark.jsonl",
+        "bytes": 253855,
+        "sha256": "5d1a1fac28897bfb8eb597b1b2f327afb713f181a6ba22d4b0d7c836041dacd7",
+        "matches": true
+      },
+      {
+        "file": "cases.jsonl",
+        "bytes": 464285,
+        "sha256": "feb5710f6886c1511dd45d6ee5aae4c2f0dda96bb43c3296c426e92b13e38345",
+        "matches": true
+      },
+      {
+        "file": "kwts-v0.6.0-dataset.zip",
+        "bytes": 417058,
+        "sha256": "51e2330dadaa3992daf0365939cc397a3ea43bfad95115d4646a5784b5b2f81e",
+        "matches": true
+      },
+      {
+        "file": "manifest.json",
+        "bytes": 10327,
+        "sha256": "f7171cd1bbcea69261bffc021c6381a66f780e97ba4de3910cfcae219351f34f",
+        "matches": true
+      },
+      {
+        "file": "pairs.jsonl",
+        "bytes": 8571,
+        "sha256": "9934c24c1cc465a5f11b818fc96865aa658f274d6165f156ae0cba800fc7c579",
+        "matches": true
+      },
+      {
+        "file": "pre-run-freeze.json",
+        "bytes": 8658,
+        "sha256": "364edd1ce730f7073f6ee69ecffb4026b2046664f53f6dbdc1171ee35c642909",
+        "matches": true
+      },
+      {
+        "file": "review-summary.json",
+        "bytes": 2137,
+        "sha256": "336db09cfe5bd0514373ba475bb5fc3657fa49ce88ed597d8c81bb1f1f92306c",
+        "matches": true
+      },
+      {
+        "file": "source-provenance.json",
+        "bytes": 88134,
+        "sha256": "ef3d74f99d15627421bc4bd867e014ca4c2a0c5077dbb9ea4479cc40602d7344",
+        "matches": true
+      },
+      {
+        "file": "tool_contract.json",
+        "bytes": 8508,
+        "sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06",
+        "matches": true
+      }
+    ],
+    "all_matches": true,
+    "file_count": 14
+  },
+  "dataset_only_archive": {
+    "archive": "kwts-v0.6.0-dataset.zip",
+    "sha256": "51e2330dadaa3992daf0365939cc397a3ea43bfad95115d4646a5784b5b2f81e",
+    "bytes": 417058,
+    "frozen_public_commit": "18fc69d6287337b4afadfb21c55a0e6c0c5a9f19"
+  },
+  "scope": "The initial GitHub commit and exact freeze were published before these model runs. Hugging Face initial file downloads were checked anonymously at the pinned dataset commit. Later run reports and README updates are separate additions; the dataset-only archive stays unchanged.",
+  "viewer_verification": {
+    "checked_at": "2026-10-08T22:38:15.712544+00:00",
+    "endpoint": "https://datasets-server.huggingface.co/rows?dataset=Tylerbry1%2Fkwts-healthcare-dataset&config=agent_inputs&split=validation&offset=0&length=1",
+    "config": "agent_inputs",
+    "split": "validation",
+    "num_rows_total": 90,
+    "partial": false,
+    "browser_confirmed_90_rows": true,
+    "display_clock": "The viewer auto-converts as_of to a UTC timestamp; canonical raw JSONL retains its original -05:00 offset."
+  }
+}

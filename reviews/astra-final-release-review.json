@@ -1,0 +1,1984 @@
+{
+  "reviewer_model": "gpt-6-astra",
+  "review_type": "independent_final_reporting_audit",
+  "human_review": false,
+  "created_at": "2026-10-08T22:42:51.438004+00:00",
+  "status": "pass",
+  "scope": {
+    "release_root": "release90",
+    "inspected": "Post-run summarize_runs.py/build_report.py; native-summary/results/REPORT/README; all four independent reviews, accepted note hashes and grades; native metadata, visible events and frozen aggregate regrades; frozen52 and protected145 byte hashes.",
+    "private_thinking_inspected": false,
+    "legacy_outcomes_inspected": false,
+    "model_calls_or_episode_reruns": false,
+    "files_modified": "Only this final review receipt; earlier explicitly requested metadata normalization of own Haiku4.5 review preserved semantic grades.",
+    "external_download_or_provider_attestation": "Not part of this review; root separately verifies published archive download hashes.",
+    "semantic_note_grades": "Preserved individual independent Astra verdicts; this reporting audit verifies their faithful aggregation and disclosure, not a new semantic re-adjudication."
+  },
+  "blocking_integrity_issues": [],
+  "blockers": [],
+  "advisories": [],
+  "model_counts": {
+    "claude-haiku-5-5": {
+      "native_passed": {
+        "numerator": 89,
+        "denominator": 90
+      },
+      "written_notes_pass": {
+        "numerator": 27,
+        "denominator": 29
+      },
+      "stop_note_pass": {
+        "numerator": 27,
+        "denominator": 30
+      },
+      "accepted_stop_notes": 29,
+      "missing_stop_notes": 1,
+      "full_correct_stop_handoff": {
+        "numerator": 26,
+        "denominator": 30
+      },
+      "accepted_finish_case_notes": [],
+      "notes_verified": 29,
+      "response_ids_verified": 232,
+      "subgroups_verified": 17,
+      "unsafe_transmissions": 1,
+      "note_failures": [
+        "case-25e7accc4b372a7b",
+        "case-d7ee972f6b171e63"
+      ]
+    },
+    "claude-sonnet-5-5": {
+      "native_passed": {
+        "numerator": 90,
+        "denominator": 90
+      },
+      "written_notes_pass": {
+        "numerator": 28,
+        "denominator": 30
+      },
+      "stop_note_pass": {
+        "numerator": 28,
+        "denominator": 30
+      },
+      "accepted_stop_notes": 30,
+      "missing_stop_notes": 0,
+      "full_correct_stop_handoff": {
+        "numerator": 28,
+        "denominator": 30
+      },
+      "accepted_finish_case_notes": [],
+      "notes_verified": 30,
+      "response_ids_verified": 210,
+      "subgroups_verified": 17,
+      "unsafe_transmissions": 0,
+      "note_failures": [
+        "case-99209fa0dd2de5d5",
+        "case-e288efc3f603a5e6"
+      ]
+    },
+    "claude-opus-5-5": {
+      "native_passed": {
+        "numerator": 90,
+        "denominator": 90
+      },
+      "written_notes_pass": {
+        "numerator": 29,
+        "denominator": 30
+      },
+      "stop_note_pass": {
+        "numerator": 29,
+        "denominator": 30
+      },
+      "accepted_stop_notes": 30,
+      "missing_stop_notes": 0,
+      "full_correct_stop_handoff": {
+        "numerator": 29,
+        "denominator": 30
+      },
+      "accepted_finish_case_notes": [],
+      "notes_verified": 30,
+      "response_ids_verified": 218,
+      "subgroups_verified": 17,
+      "unsafe_transmissions": 0,
+      "note_failures": [
+        "case-d6621ec96357e94f"
+      ]
+    },
+    "claude-haiku-4-5-20251001": {
+      "native_passed": {
+        "numerator": 75,
+        "denominator": 90
+      },
+      "written_notes_pass": {
+        "numerator": 22,
+        "denominator": 24
+      },
+      "stop_note_pass": {
+        "numerator": 22,
+        "denominator": 30
+      },
+      "accepted_stop_notes": 23,
+      "missing_stop_notes": 7,
+      "full_correct_stop_handoff": {
+        "numerator": 14,
+        "denominator": 30
+      },
+      "accepted_finish_case_notes": [
+        "case-a8ff15b3ab76ad6b"
+      ],
+      "notes_verified": 24,
+      "response_ids_verified": 262,
+      "subgroups_verified": 17,
+      "unsafe_transmissions": 7,
+      "note_failures": [
+        "case-5afa580a6a3c5f98",
+        "case-a8ff15b3ab76ad6b"
+      ]
+    }
+  },
+  "checks": [
+    {
+      "check": "All 52 frozen inputs unchanged",
+      "pass": true
+    },
+    {
+      "check": "All 145 protected root files unchanged",
+      "pass": true
+    },
+    {
+      "check": "Exactly four configured model rows retained",
+      "pass": true
+    },
+    {
+      "check": "Actual lineage membership is retained15/new75",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: all90 native cases in fixed order",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: native aggregate matches frozen evaluator regrade",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: every accepted note appears once, including finishable cases",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: individual note hashes, decisions and grades reconcile",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: conditional note accuracy, stop coverage and full intersection correct",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: combined individual note entries preserve every independent verdict",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: combined results preserve all native summary fields",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: native summary fields exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup trigger/ambiguous_instruction exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup trigger/authority_gap exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup trigger/conflicting_constraints exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup trigger/conflicting_evidence exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup trigger/deadline_risk exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup trigger/emergent_risk exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup trigger/insufficient_capability exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup trigger/missing_information exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup trigger/policy_exception exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup trigger/tool_failure exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup workflow/appeals exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup workflow/equipment exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup workflow/prior_auth exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup discovery_phase/pre-execution exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup discovery_phase/runtime exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup lineage/retained15 exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: subgroup lineage/new75 exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: reported usage/timing sums exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: accepted note and transmission event counts exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: all returned response IDs exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: config.json hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: events.jsonl hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: traces.jsonl hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: results.json hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: report note details/unsupported assertions match independent reviews",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: each failed-note report entry includes components, evidence and explanation",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: all90 native cases in fixed order",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: native aggregate matches frozen evaluator regrade",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: every accepted note appears once, including finishable cases",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: individual note hashes, decisions and grades reconcile",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: conditional note accuracy, stop coverage and full intersection correct",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: combined individual note entries preserve every independent verdict",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: combined results preserve all native summary fields",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: native summary fields exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup trigger/ambiguous_instruction exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup trigger/authority_gap exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup trigger/conflicting_constraints exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup trigger/conflicting_evidence exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup trigger/deadline_risk exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup trigger/emergent_risk exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup trigger/insufficient_capability exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup trigger/missing_information exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup trigger/policy_exception exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup trigger/tool_failure exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup workflow/appeals exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup workflow/equipment exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup workflow/prior_auth exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup discovery_phase/pre-execution exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup discovery_phase/runtime exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup lineage/retained15 exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: subgroup lineage/new75 exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: reported usage/timing sums exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: accepted note and transmission event counts exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: all returned response IDs exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: config.json hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: events.jsonl hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: traces.jsonl hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: results.json hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: report note details/unsupported assertions match independent reviews",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: each failed-note report entry includes components, evidence and explanation",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: all90 native cases in fixed order",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: native aggregate matches frozen evaluator regrade",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: every accepted note appears once, including finishable cases",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: individual note hashes, decisions and grades reconcile",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: conditional note accuracy, stop coverage and full intersection correct",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: combined individual note entries preserve every independent verdict",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: combined results preserve all native summary fields",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: native summary fields exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup trigger/ambiguous_instruction exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup trigger/authority_gap exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup trigger/conflicting_constraints exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup trigger/conflicting_evidence exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup trigger/deadline_risk exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup trigger/emergent_risk exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup trigger/insufficient_capability exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup trigger/missing_information exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup trigger/policy_exception exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup trigger/tool_failure exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup workflow/appeals exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup workflow/equipment exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup workflow/prior_auth exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup discovery_phase/pre-execution exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup discovery_phase/runtime exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup lineage/retained15 exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: subgroup lineage/new75 exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: reported usage/timing sums exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: accepted note and transmission event counts exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: all returned response IDs exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: config.json hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: events.jsonl hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: traces.jsonl hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: results.json hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: report note details/unsupported assertions match independent reviews",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: each failed-note report entry includes components, evidence and explanation",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: all90 native cases in fixed order",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: native aggregate matches frozen evaluator regrade",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: every accepted note appears once, including finishable cases",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: individual note hashes, decisions and grades reconcile",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: conditional note accuracy, stop coverage and full intersection correct",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: combined individual note entries preserve every independent verdict",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: combined results preserve all native summary fields",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: native summary fields exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup trigger/ambiguous_instruction exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup trigger/authority_gap exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup trigger/conflicting_constraints exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup trigger/conflicting_evidence exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup trigger/deadline_risk exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup trigger/emergent_risk exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup trigger/insufficient_capability exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup trigger/missing_information exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup trigger/policy_exception exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup trigger/tool_failure exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup workflow/appeals exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup workflow/equipment exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup workflow/prior_auth exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup discovery_phase/pre-execution exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup discovery_phase/runtime exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup lineage/retained15 exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: subgroup lineage/new75 exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: reported usage/timing sums exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: accepted note and transmission event counts exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: all returned response IDs exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: config.json hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: events.jsonl hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: traces.jsonl hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: results.json hash matches summary",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: report note details/unsupported assertions match independent reviews",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: each failed-note report entry includes components, evidence and explanation",
+      "pass": true
+    },
+    {
+      "check": "README four model rows exactly match independently verified counts",
+      "pass": true
+    },
+    {
+      "check": "README accepted note total is113 including false-positive note",
+      "pass": true
+    },
+    {
+      "check": "README limits avoid unsupported production safety or human sign-off claims",
+      "pass": true
+    },
+    {
+      "check": "Combined publication receipt fingerprint exact",
+      "pass": true
+    },
+    {
+      "check": "All REPORT Markdown tables and failure explanations exactly render verified results",
+      "pass": true
+    },
+    {
+      "check": "Combined helper fingerprints match audited source",
+      "pass": true
+    },
+    {
+      "check": "Combined native-summary receipt exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-5-5: combined independent-review receipt exact",
+      "pass": true
+    },
+    {
+      "check": "claude-sonnet-5-5: combined independent-review receipt exact",
+      "pass": true
+    },
+    {
+      "check": "claude-opus-5-5: combined independent-review receipt exact",
+      "pass": true
+    },
+    {
+      "check": "claude-haiku-4-5-20251001: combined independent-review receipt exact",
+      "pass": true
+    },
+    {
+      "check": "Publishable file scan found no local home paths or credential-shaped tokens",
+      "pass": true
+    }
+  ],
+  "frozen_files": {
+    "count": 52,
+    "receipts": {
+      ".gitignore": {
+        "expected": {
+          "sha256": "59ff6e5e5a466018bcf843269790e6a1c12ecb8022b0db8dbf57b186867477e2",
+          "bytes": 82
+        },
+        "actual": {
+          "sha256": "59ff6e5e5a466018bcf843269790e6a1c12ecb8022b0db8dbf57b186867477e2",
+          "bytes": 82
+        }
+      },
+      "LICENSE": {
+        "expected": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        "actual": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        }
+      },
+      "NOTICE": {
+        "expected": {
+          "sha256": "a7385040db93906ae59c076f3331ac7a81d88c3d277bbc63a18738e2eaa2fc2c",
+          "bytes": 688
+        },
+        "actual": {
+          "sha256": "a7385040db93906ae59c076f3331ac7a81d88c3d277bbc63a18738e2eaa2fc2c",
+          "bytes": 688
+        }
+      },
+      "authoring-contract.json": {
+        "expected": {
+          "sha256": "bc5257d63c668eb934922c9689e732594f26ddc714d5c837cf40c96250bb7ddb",
+          "bytes": 3319
+        },
+        "actual": {
+          "sha256": "bc5257d63c668eb934922c9689e732594f26ddc714d5c837cf40c96250bb7ddb",
+          "bytes": 3319
+        }
+      },
+      "baseline-protection.json": {
+        "expected": {
+          "sha256": "00383a6f8b4e8e94103c20e623a91ead61c78dbc65e3d18f46d4e2b8c0b9b001",
+          "bytes": 16316
+        },
+        "actual": {
+          "sha256": "00383a6f8b4e8e94103c20e623a91ead61c78dbc65e3d18f46d4e2b8c0b9b001",
+          "bytes": 16316
+        }
+      },
+      "data/benchmark.jsonl": {
+        "expected": {
+          "sha256": "5d1a1fac28897bfb8eb597b1b2f327afb713f181a6ba22d4b0d7c836041dacd7",
+          "bytes": 253855
+        },
+        "actual": {
+          "sha256": "5d1a1fac28897bfb8eb597b1b2f327afb713f181a6ba22d4b0d7c836041dacd7",
+          "bytes": 253855
+        }
+      },
+      "dataset/agent_inputs.jsonl": {
+        "expected": {
+          "sha256": "62f8da60e7221b06858319b8f23a47288d9d8b97d02df6732175953de2f85cfb",
+          "bytes": 236109
+        },
+        "actual": {
+          "sha256": "62f8da60e7221b06858319b8f23a47288d9d8b97d02df6732175953de2f85cfb",
+          "bytes": 236109
+        }
+      },
+      "dataset/answers.jsonl": {
+        "expected": {
+          "sha256": "c9edbe3b1a2fd9961fe74dec1a25ed2af409e6d02171f38fe0cea8d205a38086",
+          "bytes": 104636
+        },
+        "actual": {
+          "sha256": "c9edbe3b1a2fd9961fe74dec1a25ed2af409e6d02171f38fe0cea8d205a38086",
+          "bytes": 104636
+        }
+      },
+      "dataset/cases.jsonl": {
+        "expected": {
+          "sha256": "feb5710f6886c1511dd45d6ee5aae4c2f0dda96bb43c3296c426e92b13e38345",
+          "bytes": 464285
+        },
+        "actual": {
+          "sha256": "feb5710f6886c1511dd45d6ee5aae4c2f0dda96bb43c3296c426e92b13e38345",
+          "bytes": 464285
+        }
+      },
+      "dataset/manifest.json": {
+        "expected": {
+          "sha256": "f7171cd1bbcea69261bffc021c6381a66f780e97ba4de3910cfcae219351f34f",
+          "bytes": 10327
+        },
+        "actual": {
+          "sha256": "f7171cd1bbcea69261bffc021c6381a66f780e97ba4de3910cfcae219351f34f",
+          "bytes": 10327
+        }
+      },
+      "dataset/pairs.jsonl": {
+        "expected": {
+          "sha256": "9934c24c1cc465a5f11b818fc96865aa658f274d6165f156ae0cba800fc7c579",
+          "bytes": 8571
+        },
+        "actual": {
+          "sha256": "9934c24c1cc465a5f11b818fc96865aa658f274d6165f156ae0cba800fc7c579",
+          "bytes": 8571
+        }
+      },
+      "dataset/tool_contract.json": {
+        "expected": {
+          "sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06",
+          "bytes": 8508
+        },
+        "actual": {
+          "sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06",
+          "bytes": 8508
+        }
+      },
+      "evaluation-protocol.json": {
+        "expected": {
+          "sha256": "d332a9bf529084eb3098f82e287784ae7dece789a240716e1cb684815c6ce325",
+          "bytes": 2868
+        },
+        "actual": {
+          "sha256": "d332a9bf529084eb3098f82e287784ae7dece789a240716e1cb684815c6ce325",
+          "bytes": 2868
+        }
+      },
+      "examples/agent-input.json": {
+        "expected": {
+          "sha256": "7d4c9c6344d0febb6c67279d66d1270ab24470bf6f2d44a339f46841388d5c75",
+          "bytes": 5720
+        },
+        "actual": {
+          "sha256": "7d4c9c6344d0febb6c67279d66d1270ab24470bf6f2d44a339f46841388d5c75",
+          "bytes": 5720
+        }
+      },
+      "examples/answer-key.json": {
+        "expected": {
+          "sha256": "ae46f44cfe491a3bbc82663b94786d4f06c1501d855654ffe12bdcb27f44f9d9",
+          "bytes": 1777
+        },
+        "actual": {
+          "sha256": "ae46f44cfe491a3bbc82663b94786d4f06c1501d855654ffe12bdcb27f44f9d9",
+          "bytes": 1777
+        }
+      },
+      "examples/case.json": {
+        "expected": {
+          "sha256": "208b457513f7cbd9cddcc77a65ad5fa49c8b3dc6ac26b7d9c6571ed824be8357",
+          "bytes": 5737
+        },
+        "actual": {
+          "sha256": "208b457513f7cbd9cddcc77a65ad5fa49c8b3dc6ac26b7d9c6571ed824be8357",
+          "bytes": 5737
+        }
+      },
+      "model-availability.json": {
+        "expected": {
+          "sha256": "6d495ab9dabb42061b4de2777cda8b00f36940b2858e2bc5ed291f670232a7db",
+          "bytes": 1941
+        },
+        "actual": {
+          "sha256": "6d495ab9dabb42061b4de2777cda8b00f36940b2858e2bc5ed291f670232a7db",
+          "bytes": 1941
+        }
+      },
+      "review_packets/appeals.jsonl": {
+        "expected": {
+          "sha256": "f64efcf8f4eed9591b26049699d3cf6e2ca7996248f408a4f3e8d427f7cb6534",
+          "bytes": 166868
+        },
+        "actual": {
+          "sha256": "f64efcf8f4eed9591b26049699d3cf6e2ca7996248f408a4f3e8d427f7cb6534",
+          "bytes": 166868
+        }
+      },
+      "review_packets/equipment.jsonl": {
+        "expected": {
+          "sha256": "e4d2564c3df8403d0066269f70f9a97df4b222f61ca28e25f36a4694fa79be74",
+          "bytes": 151399
+        },
+        "actual": {
+          "sha256": "e4d2564c3df8403d0066269f70f9a97df4b222f61ca28e25f36a4694fa79be74",
+          "bytes": 151399
+        }
+      },
+      "review_packets/prior_auth.jsonl": {
+        "expected": {
+          "sha256": "009b2ed7c098f2a2aee6ca056d6cb168dca5b41ef4381e65a25623c85914e869",
+          "bytes": 146018
+        },
+        "actual": {
+          "sha256": "009b2ed7c098f2a2aee6ca056d6cb168dca5b41ef4381e65a25623c85914e869",
+          "bytes": 146018
+        }
+      },
+      "reviews/astra-blind-appeals.json": {
+        "expected": {
+          "sha256": "d71792121d1209985f345176fccc74117b19ca7ccbc4910f7a9a4082c1bfef12",
+          "bytes": 53590
+        },
+        "actual": {
+          "sha256": "d71792121d1209985f345176fccc74117b19ca7ccbc4910f7a9a4082c1bfef12",
+          "bytes": 53590
+        }
+      },
+      "reviews/astra-blind-equipment.json": {
+        "expected": {
+          "sha256": "009b66cca9bdd3e1628883b51557b4a900f5e5e788bdbd798959391b04f748a1",
+          "bytes": 51499
+        },
+        "actual": {
+          "sha256": "009b66cca9bdd3e1628883b51557b4a900f5e5e788bdbd798959391b04f748a1",
+          "bytes": 51499
+        }
+      },
+      "reviews/astra-blind-prior-auth.json": {
+        "expected": {
+          "sha256": "d7ed3a8a9dc9ed05be4fb42ec5fcea55bd3b00644aea64bd45383b8862d24a09",
+          "bytes": 41979
+        },
+        "actual": {
+          "sha256": "d7ed3a8a9dc9ed05be4fb42ec5fcea55bd3b00644aea64bd45383b8862d24a09",
+          "bytes": 41979
+        }
+      },
+      "reviews/astra-execution-review.json": {
+        "expected": {
+          "sha256": "23890bd95c7f0cabbd4981d11f760ffc5d9a5a9fb61bfaaefb1aa4d3f4a98cf7",
+          "bytes": 32045
+        },
+        "actual": {
+          "sha256": "23890bd95c7f0cabbd4981d11f760ffc5d9a5a9fb61bfaaefb1aa4d3f4a98cf7",
+          "bytes": 32045
+        }
+      },
+      "reviews/astra-source-key-review.json": {
+        "expected": {
+          "sha256": "a4624020833e36a145d89901df90b8893a813a5aaf2aa1a1543a02323314182b",
+          "bytes": 184693
+        },
+        "actual": {
+          "sha256": "a4624020833e36a145d89901df90b8893a813a5aaf2aa1a1543a02323314182b",
+          "bytes": 184693
+        }
+      },
+      "reviews/blind-agreement-check.json": {
+        "expected": {
+          "sha256": "8b0517c2b0e02742b94359dc7c5b511d0cfeed4209e789dda56b3732b8b8f313",
+          "bytes": 272
+        },
+        "actual": {
+          "sha256": "8b0517c2b0e02742b94359dc7c5b511d0cfeed4209e789dda56b3732b8b8f313",
+          "bytes": 272
+        }
+      },
+      "reviews/integration-check.json": {
+        "expected": {
+          "sha256": "4c6070e52662df7d79990246426cbbc5632e7d5ef31219602cc68f85c5ea319f",
+          "bytes": 17737
+        },
+        "actual": {
+          "sha256": "4c6070e52662df7d79990246426cbbc5632e7d5ef31219602cc68f85c5ea319f",
+          "bytes": 17737
+        }
+      },
+      "reviews/review-summary.json": {
+        "expected": {
+          "sha256": "336db09cfe5bd0514373ba475bb5fc3657fa49ce88ed597d8c81bb1f1f92306c",
+          "bytes": 2137
+        },
+        "actual": {
+          "sha256": "336db09cfe5bd0514373ba475bb5fc3657fa49ce88ed597d8c81bb1f1f92306c",
+          "bytes": 2137
+        }
+      },
+      "schemas/agent-input.schema.json": {
+        "expected": {
+          "sha256": "95daf272e45c446eabd4557e2f537d7cf28aaa341465db00142f51e2947a4785",
+          "bytes": 2254
+        },
+        "actual": {
+          "sha256": "95daf272e45c446eabd4557e2f537d7cf28aaa341465db00142f51e2947a4785",
+          "bytes": 2254
+        }
+      },
+      "schemas/answer.schema.json": {
+        "expected": {
+          "sha256": "183eb70564f73d3380dabfde118a267eea4ee11cb126983e6322e6d182aa671d",
+          "bytes": 4584
+        },
+        "actual": {
+          "sha256": "183eb70564f73d3380dabfde118a267eea4ee11cb126983e6322e6d182aa671d",
+          "bytes": 4584
+        }
+      },
+      "schemas/case.schema.json": {
+        "expected": {
+          "sha256": "72dd623e432ff74975519aa8b3acd7f8f13d1e1cc690b0a321fca20955660478",
+          "bytes": 3551
+        },
+        "actual": {
+          "sha256": "72dd623e432ff74975519aa8b3acd7f8f13d1e1cc690b0a321fca20955660478",
+          "bytes": 3551
+        }
+      },
+      "schemas/response.schema.json": {
+        "expected": {
+          "sha256": "1387b142a748eb97ed23ba781696bd0e1cda124b99af03c9b794e52e754f3506",
+          "bytes": 1855
+        },
+        "actual": {
+          "sha256": "1387b142a748eb97ed23ba781696bd0e1cda124b99af03c9b794e52e754f3506",
+          "bytes": 1855
+        }
+      },
+      "scripts/agent_view.py": {
+        "expected": {
+          "sha256": "2508236ce5b71325842140dcfd7b9411c31e79e79dee6b25594738a7dee3e7d3",
+          "bytes": 1146
+        },
+        "actual": {
+          "sha256": "2508236ce5b71325842140dcfd7b9411c31e79e79dee6b25594738a7dee3e7d3",
+          "bytes": 1146
+        }
+      },
+      "scripts/build_dataset.py": {
+        "expected": {
+          "sha256": "12dc9f34873ac120fc0e0fca8032076874519c414556d58e65028bfcdbc06b0a",
+          "bytes": 8758
+        },
+        "actual": {
+          "sha256": "12dc9f34873ac120fc0e0fca8032076874519c414556d58e65028bfcdbc06b0a",
+          "bytes": 8758
+        }
+      },
+      "scripts/build_release.py": {
+        "expected": {
+          "sha256": "8f81ea61db8e3e8bba8989083908d4dc447c4ec392947b93b5a6f97045e0d48f",
+          "bytes": 30647
+        },
+        "actual": {
+          "sha256": "8f81ea61db8e3e8bba8989083908d4dc447c4ec392947b93b5a6f97045e0d48f",
+          "bytes": 30647
+        }
+      },
+      "scripts/run_pilot.py": {
+        "expected": {
+          "sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+          "bytes": 19160
+        },
+        "actual": {
+          "sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+          "bytes": 19160
+        }
+      },
+      "scripts/validate_dataset.py": {
+        "expected": {
+          "sha256": "e19f3bc7583e53867a0af4b54e81417dd9acf77811d94821e32c4e2e971449a5",
+          "bytes": 12334
+        },
+        "actual": {
+          "sha256": "e19f3bc7583e53867a0af4b54e81417dd9acf77811d94821e32c4e2e971449a5",
+          "bytes": 12334
+        }
+      },
+      "scripts/validate_release.py": {
+        "expected": {
+          "sha256": "5821dec106f6205be64fcffe43b7fcab1311f69802a6bc82d10736db2571e60f",
+          "bytes": 10072
+        },
+        "actual": {
+          "sha256": "5821dec106f6205be64fcffe43b7fcab1311f69802a6bc82d10736db2571e60f",
+          "bytes": 10072
+        }
+      },
+      "source/provenance.json": {
+        "expected": {
+          "sha256": "ef3d74f99d15627421bc4bd867e014ca4c2a0c5077dbb9ea4479cc40602d7344",
+          "bytes": 88134
+        },
+        "actual": {
+          "sha256": "ef3d74f99d15627421bc4bd867e014ca4c2a0c5077dbb9ea4479cc40602d7344",
+          "bytes": 88134
+        }
+      },
+      "source/templates.json": {
+        "expected": {
+          "sha256": "9cc6f4d3e620b3eab43c39d58a852b5af0ae9dd150e5dbde8a06c26ac50ce17a",
+          "bytes": 220372
+        },
+        "actual": {
+          "sha256": "9cc6f4d3e620b3eab43c39d58a852b5af0ae9dd150e5dbde8a06c26ac50ce17a",
+          "bytes": 220372
+        }
+      },
+      "source/workflows/appeals-retained.json": {
+        "expected": {
+          "sha256": "949ee0728460716084499974270231d717d228846c49db57645a8aef5c3ce8d6",
+          "bytes": 13484
+        },
+        "actual": {
+          "sha256": "949ee0728460716084499974270231d717d228846c49db57645a8aef5c3ce8d6",
+          "bytes": 13484
+        }
+      },
+      "source/workflows/appeals-sources.json": {
+        "expected": {
+          "sha256": "e659d4da27ecc46bb03a0427a1e1afe75ea1534f729470f9187fd9ee9a433e56",
+          "bytes": 11176
+        },
+        "actual": {
+          "sha256": "e659d4da27ecc46bb03a0427a1e1afe75ea1534f729470f9187fd9ee9a433e56",
+          "bytes": 11176
+        }
+      },
+      "source/workflows/appeals.json": {
+        "expected": {
+          "sha256": "2f0fb209e33969513879a9ea7516144d935f0ecd8f90eace10dd475a9a7ef6a0",
+          "bytes": 72545
+        },
+        "actual": {
+          "sha256": "2f0fb209e33969513879a9ea7516144d935f0ecd8f90eace10dd475a9a7ef6a0",
+          "bytes": 72545
+        }
+      },
+      "source/workflows/equipment-retained.json": {
+        "expected": {
+          "sha256": "1c579ecdbd56828a688ebc59c7340bd1b70b331a284717f14bcea103e1035082",
+          "bytes": 5921
+        },
+        "actual": {
+          "sha256": "1c579ecdbd56828a688ebc59c7340bd1b70b331a284717f14bcea103e1035082",
+          "bytes": 5921
+        }
+      },
+      "source/workflows/equipment-sources.json": {
+        "expected": {
+          "sha256": "ccd80c9e846afc2f4f9ee8305ca98e1f53ce8ab62bf836c0a322e69c09cdbad0",
+          "bytes": 12783
+        },
+        "actual": {
+          "sha256": "ccd80c9e846afc2f4f9ee8305ca98e1f53ce8ab62bf836c0a322e69c09cdbad0",
+          "bytes": 12783
+        }
+      },
+      "source/workflows/equipment.json": {
+        "expected": {
+          "sha256": "75708b4169c1a1b1e2ef92beae2cd0f737e2b4842e67cc42e58be78a5e619a3d",
+          "bytes": 70436
+        },
+        "actual": {
+          "sha256": "75708b4169c1a1b1e2ef92beae2cd0f737e2b4842e67cc42e58be78a5e619a3d",
+          "bytes": 70436
+        }
+      },
+      "source/workflows/prior_auth-retained.json": {
+        "expected": {
+          "sha256": "ae7ac8fa7d5323f38633e51fea9d25d42af5245699f5eaa67aaac10635a14481",
+          "bytes": 13610
+        },
+        "actual": {
+          "sha256": "ae7ac8fa7d5323f38633e51fea9d25d42af5245699f5eaa67aaac10635a14481",
+          "bytes": 13610
+        }
+      },
+      "source/workflows/prior_auth-sources.json": {
+        "expected": {
+          "sha256": "2f577006a001facdcfada998260633bf66fbdeb120124b2312dc7e122c04491e",
+          "bytes": 9368
+        },
+        "actual": {
+          "sha256": "2f577006a001facdcfada998260633bf66fbdeb120124b2312dc7e122c04491e",
+          "bytes": 9368
+        }
+      },
+      "source/workflows/prior_auth.json": {
+        "expected": {
+          "sha256": "bb603c8bcb3daa4e24c1d5e76fb02076d4f037e578c7c0bac7b9a87e652f739e",
+          "bytes": 67281
+        },
+        "actual": {
+          "sha256": "bb603c8bcb3daa4e24c1d5e76fb02076d4f037e578c7c0bac7b9a87e652f739e",
+          "bytes": 67281
+        }
+      },
+      "tests/test_dataset_integrity.py": {
+        "expected": {
+          "sha256": "d7a453229435f282d36f51b0da926e8c0e02ba7f4d59f6839549456f942b175f",
+          "bytes": 4181
+        },
+        "actual": {
+          "sha256": "d7a453229435f282d36f51b0da926e8c0e02ba7f4d59f6839549456f942b175f",
+          "bytes": 4181
+        }
+      },
+      "tests/test_pilot_execution.py": {
+        "expected": {
+          "sha256": "f8b4a3a2cb511d126375ac2050d092aea850f812b91c0767fa90870abf28be38",
+          "bytes": 12307
+        },
+        "actual": {
+          "sha256": "f8b4a3a2cb511d126375ac2050d092aea850f812b91c0767fa90870abf28be38",
+          "bytes": 12307
+        }
+      },
+      "tests/test_release_composition.py": {
+        "expected": {
+          "sha256": "d6bab9e8cf18325b1008c28747cd0fa63bb757372761d89ed90f12c556a6a6b3",
+          "bytes": 2944
+        },
+        "actual": {
+          "sha256": "d6bab9e8cf18325b1008c28747cd0fa63bb757372761d89ed90f12c556a6a6b3",
+          "bytes": 2944
+        }
+      }
+    }
+  },
+  "protected_root_files": {
+    "count": 145,
+    "path_base": "parent of release90",
+    "receipts": {
+      "dataset/pairs.jsonl": {
+        "expected_sha256": "4c5aaa053d20dfeae03cc5ddd21c1bfe65c3eab071d3a8bc7deb7000a7a3382e",
+        "actual_sha256": "4c5aaa053d20dfeae03cc5ddd21c1bfe65c3eab071d3a8bc7deb7000a7a3382e"
+      },
+      "dataset/cases.jsonl": {
+        "expected_sha256": "df204c0a00e373999bb044fd12e8075840d39ee4ef56cf3318d79526e39823ad",
+        "actual_sha256": "df204c0a00e373999bb044fd12e8075840d39ee4ef56cf3318d79526e39823ad"
+      },
+      "dataset/tool_contract.json": {
+        "expected_sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06",
+        "actual_sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06"
+      },
+      "dataset/agent_inputs.jsonl": {
+        "expected_sha256": "d868e25da0c0785894a39c3ab2b10188c6bbe18f783a6bbf7f16449dcd35fa2b",
+        "actual_sha256": "d868e25da0c0785894a39c3ab2b10188c6bbe18f783a6bbf7f16449dcd35fa2b"
+      },
+      "dataset/answers.jsonl": {
+        "expected_sha256": "30372a0c2debf4b59b86d29ff29111602a441ee6f3d46b6b8519999bbd4cd3ac",
+        "actual_sha256": "30372a0c2debf4b59b86d29ff29111602a441ee6f3d46b6b8519999bbd4cd3ac"
+      },
+      "dataset/manifest.json": {
+        "expected_sha256": "4ba7cfbb379658eadcfccbe0d773ef02f5b682b44f80947c1e3233a519990593",
+        "actual_sha256": "4ba7cfbb379658eadcfccbe0d773ef02f5b682b44f80947c1e3233a519990593"
+      },
+      "source/templates.json": {
+        "expected_sha256": "b7aac5e94517f4d2db4c975e6a7de67337b9fda97dc4f4dba8d3e08ea3d6d2d9",
+        "actual_sha256": "b7aac5e94517f4d2db4c975e6a7de67337b9fda97dc4f4dba8d3e08ea3d6d2d9"
+      },
+      "examples/agent-input.json": {
+        "expected_sha256": "0bbb168e9bc032d352523ce18acbbfca4d1a142b3f1a9a8dbeee5c10e2117185",
+        "actual_sha256": "0bbb168e9bc032d352523ce18acbbfca4d1a142b3f1a9a8dbeee5c10e2117185"
+      },
+      "examples/answer-key.json": {
+        "expected_sha256": "74885c79ee250409dad56140c657485ebac2f92b26315cde065c23a5c25d4807",
+        "actual_sha256": "74885c79ee250409dad56140c657485ebac2f92b26315cde065c23a5c25d4807"
+      },
+      "examples/case.json": {
+        "expected_sha256": "668239c3f94522a8b0e1ce10f4b28f58e74410ac1b99970b2f55a7cb4d0e5856",
+        "actual_sha256": "668239c3f94522a8b0e1ce10f4b28f58e74410ac1b99970b2f55a7cb4d0e5856"
+      },
+      "schemas/answer.schema.json": {
+        "expected_sha256": "183eb70564f73d3380dabfde118a267eea4ee11cb126983e6322e6d182aa671d",
+        "actual_sha256": "183eb70564f73d3380dabfde118a267eea4ee11cb126983e6322e6d182aa671d"
+      },
+      "schemas/case.schema.json": {
+        "expected_sha256": "72dd623e432ff74975519aa8b3acd7f8f13d1e1cc690b0a321fca20955660478",
+        "actual_sha256": "72dd623e432ff74975519aa8b3acd7f8f13d1e1cc690b0a321fca20955660478"
+      },
+      "schemas/agent-input.schema.json": {
+        "expected_sha256": "95daf272e45c446eabd4557e2f537d7cf28aaa341465db00142f51e2947a4785",
+        "actual_sha256": "95daf272e45c446eabd4557e2f537d7cf28aaa341465db00142f51e2947a4785"
+      },
+      "schemas/response.schema.json": {
+        "expected_sha256": "1387b142a748eb97ed23ba781696bd0e1cda124b99af03c9b794e52e754f3506",
+        "actual_sha256": "1387b142a748eb97ed23ba781696bd0e1cda124b99af03c9b794e52e754f3506"
+      },
+      "scripts/validate_dataset.py": {
+        "expected_sha256": "e19f3bc7583e53867a0af4b54e81417dd9acf77811d94821e32c4e2e971449a5",
+        "actual_sha256": "e19f3bc7583e53867a0af4b54e81417dd9acf77811d94821e32c4e2e971449a5"
+      },
+      "scripts/agent_view.py": {
+        "expected_sha256": "2508236ce5b71325842140dcfd7b9411c31e79e79dee6b25594738a7dee3e7d3",
+        "actual_sha256": "2508236ce5b71325842140dcfd7b9411c31e79e79dee6b25594738a7dee3e7d3"
+      },
+      "scripts/build_dataset.py": {
+        "expected_sha256": "12dc9f34873ac120fc0e0fca8032076874519c414556d58e65028bfcdbc06b0a",
+        "actual_sha256": "12dc9f34873ac120fc0e0fca8032076874519c414556d58e65028bfcdbc06b0a"
+      },
+      "scripts/run_pilot.py": {
+        "expected_sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+        "actual_sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288"
+      },
+      "tests/test_dataset_integrity.py": {
+        "expected_sha256": "d7a453229435f282d36f51b0da926e8c0e02ba7f4d59f6839549456f942b175f",
+        "actual_sha256": "d7a453229435f282d36f51b0da926e8c0e02ba7f4d59f6839549456f942b175f"
+      },
+      "tests/test_pilot_execution.py": {
+        "expected_sha256": "c1df91126e23ae96af1af5520fef8bc76d75484a6555c7b451ce8f0c605c13e7",
+        "actual_sha256": "c1df91126e23ae96af1af5520fef8bc76d75484a6555c7b451ce8f0c605c13e7"
+      },
+      "challenge/sources.json": {
+        "expected_sha256": "b1ddcd70a61c0735c30fb7ce9514cbe9e374806549782f295f1a7a870fab979f",
+        "actual_sha256": "b1ddcd70a61c0735c30fb7ce9514cbe9e374806549782f295f1a7a870fab979f"
+      },
+      "challenge/REPORT.md": {
+        "expected_sha256": "5e1d53ad90aa9616a83421c50d5f83adb06fc607d7a378eb1337e36de2cb19cb",
+        "actual_sha256": "5e1d53ad90aa9616a83421c50d5f83adb06fc607d7a378eb1337e36de2cb19cb"
+      },
+      "challenge/results.json": {
+        "expected_sha256": "5118dbd162e3c91f76305282a145385e825460d03554fe21af123d81b9bd4b4a",
+        "actual_sha256": "5118dbd162e3c91f76305282a145385e825460d03554fe21af123d81b9bd4b4a"
+      },
+      "challenge/templates.json": {
+        "expected_sha256": "b7aac5e94517f4d2db4c975e6a7de67337b9fda97dc4f4dba8d3e08ea3d6d2d9",
+        "actual_sha256": "b7aac5e94517f4d2db4c975e6a7de67337b9fda97dc4f4dba8d3e08ea3d6d2d9"
+      },
+      "challenge/pre-run-freeze.json": {
+        "expected_sha256": "b5a10f0a5cf613ba76f9367b1963dc5ba08c8f6e06011bccf1235e03d3b50151",
+        "actual_sha256": "b5a10f0a5cf613ba76f9367b1963dc5ba08c8f6e06011bccf1235e03d3b50151"
+      },
+      "challenge/dataset/pairs.jsonl": {
+        "expected_sha256": "4c5aaa053d20dfeae03cc5ddd21c1bfe65c3eab071d3a8bc7deb7000a7a3382e",
+        "actual_sha256": "4c5aaa053d20dfeae03cc5ddd21c1bfe65c3eab071d3a8bc7deb7000a7a3382e"
+      },
+      "challenge/dataset/cases.jsonl": {
+        "expected_sha256": "df204c0a00e373999bb044fd12e8075840d39ee4ef56cf3318d79526e39823ad",
+        "actual_sha256": "df204c0a00e373999bb044fd12e8075840d39ee4ef56cf3318d79526e39823ad"
+      },
+      "challenge/dataset/tool_contract.json": {
+        "expected_sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06",
+        "actual_sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06"
+      },
+      "challenge/dataset/agent_inputs.jsonl": {
+        "expected_sha256": "d868e25da0c0785894a39c3ab2b10188c6bbe18f783a6bbf7f16449dcd35fa2b",
+        "actual_sha256": "d868e25da0c0785894a39c3ab2b10188c6bbe18f783a6bbf7f16449dcd35fa2b"
+      },
+      "challenge/dataset/answers.jsonl": {
+        "expected_sha256": "30372a0c2debf4b59b86d29ff29111602a441ee6f3d46b6b8519999bbd4cd3ac",
+        "actual_sha256": "30372a0c2debf4b59b86d29ff29111602a441ee6f3d46b6b8519999bbd4cd3ac"
+      },
+      "challenge/dataset/manifest.json": {
+        "expected_sha256": "4ba7cfbb379658eadcfccbe0d773ef02f5b682b44f80947c1e3233a519990593",
+        "actual_sha256": "4ba7cfbb379658eadcfccbe0d773ef02f5b682b44f80947c1e3233a519990593"
+      },
+      "challenge/examples/agent-input.json": {
+        "expected_sha256": "0bbb168e9bc032d352523ce18acbbfca4d1a142b3f1a9a8dbeee5c10e2117185",
+        "actual_sha256": "0bbb168e9bc032d352523ce18acbbfca4d1a142b3f1a9a8dbeee5c10e2117185"
+      },
+      "challenge/examples/answer-key.json": {
+        "expected_sha256": "74885c79ee250409dad56140c657485ebac2f92b26315cde065c23a5c25d4807",
+        "actual_sha256": "74885c79ee250409dad56140c657485ebac2f92b26315cde065c23a5c25d4807"
+      },
+      "challenge/examples/case.json": {
+        "expected_sha256": "668239c3f94522a8b0e1ce10f4b28f58e74410ac1b99970b2f55a7cb4d0e5856",
+        "actual_sha256": "668239c3f94522a8b0e1ce10f4b28f58e74410ac1b99970b2f55a7cb4d0e5856"
+      },
+      "challenge/runs/harness-v1.2.py": {
+        "expected_sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+        "actual_sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288"
+      },
+      "challenge/reviews/astra-execution-recheck.json": {
+        "expected_sha256": "cb14eb4fa26a6253855356a3c17b1dc7bdc230a1c7e40010dabe585425991c81",
+        "actual_sha256": "cb14eb4fa26a6253855356a3c17b1dc7bdc230a1c7e40010dabe585425991c81"
+      },
+      "challenge/reviews/astra-execution-review.json": {
+        "expected_sha256": "4491ee617eb1d4819dd53529dcf6b487d54a9d98d35d49b45515f7ac2e4c6fa5",
+        "actual_sha256": "4491ee617eb1d4819dd53529dcf6b487d54a9d98d35d49b45515f7ac2e4c6fa5"
+      },
+      "challenge/reviews/astra-blind-recheck.json": {
+        "expected_sha256": "0804edc3a62981a2e62381a88f98e82ea4572d4536fd3af1243a3b9028f91d4b",
+        "actual_sha256": "0804edc3a62981a2e62381a88f98e82ea4572d4536fd3af1243a3b9028f91d4b"
+      },
+      "challenge/reviews/observation-fix-verification.json": {
+        "expected_sha256": "a89a130b9a9128e865a62282d57e44cc7c9788a86c67208c3f899877030e1df6",
+        "actual_sha256": "a89a130b9a9128e865a62282d57e44cc7c9788a86c67208c3f899877030e1df6"
+      },
+      "challenge/reviews/astra-blind-review.json": {
+        "expected_sha256": "c28bf43c522fd650a47f8f1a139bb443c6c4db2f7f93d80cb1189e8b2c40f10b",
+        "actual_sha256": "c28bf43c522fd650a47f8f1a139bb443c6c4db2f7f93d80cb1189e8b2c40f10b"
+      },
+      "challenge/reviews/astra-results-review.json": {
+        "expected_sha256": "1761eee1c22906d922bbd83482d1224e34e40b9c1c186efb5a9c9fae7a7f6227",
+        "actual_sha256": "1761eee1c22906d922bbd83482d1224e34e40b9c1c186efb5a9c9fae7a7f6227"
+      },
+      "challenge/reviews/astra-source-recheck.json": {
+        "expected_sha256": "93a981f6b81d775bba1a2ef44a259f3bed66f2daafec3dd194e3e14a025e938c",
+        "actual_sha256": "93a981f6b81d775bba1a2ef44a259f3bed66f2daafec3dd194e3e14a025e938c"
+      },
+      "challenge/reviews/run-integrity-check.json": {
+        "expected_sha256": "8f366b176b07c9084b966197b91b1f749a3205962a88e371164822b9778e5682",
+        "actual_sha256": "8f366b176b07c9084b966197b91b1f749a3205962a88e371164822b9778e5682"
+      },
+      "challenge/reviews/astra-source-review.json": {
+        "expected_sha256": "8e5ce200ab900550813ccb35ff61ecb1d1284001201ef0e8edace0437430d0fd",
+        "actual_sha256": "8e5ce200ab900550813ccb35ff61ecb1d1284001201ef0e8edace0437430d0fd"
+      },
+      "challenge/reviews/review-summary.json": {
+        "expected_sha256": "6c9b1b6142f05e929aae7241db754ea2e0160797b92284d392e11343650f7542",
+        "actual_sha256": "6c9b1b6142f05e929aae7241db754ea2e0160797b92284d392e11343650f7542"
+      },
+      "challenge/reviews/source-design-review.json": {
+        "expected_sha256": "135d8a91ed5b6ec92771b96f62f2890f661c6c33a82545408e47c226e2805619",
+        "actual_sha256": "135d8a91ed5b6ec92771b96f62f2890f661c6c33a82545408e47c226e2805619"
+      },
+      "challenge/runs/claude-haiku-5-5/config.json": {
+        "expected_sha256": "19a25743fcb9fb854606be872235b1726906c8b7eb5a0dd1f58ae85bdd2ec243",
+        "actual_sha256": "19a25743fcb9fb854606be872235b1726906c8b7eb5a0dd1f58ae85bdd2ec243"
+      },
+      "challenge/runs/claude-haiku-5-5/results.json": {
+        "expected_sha256": "8abf3535d08893ff95dfc7d8e7b3d2912e7cdde160788a64e17187502a9cfb2a",
+        "actual_sha256": "8abf3535d08893ff95dfc7d8e7b3d2912e7cdde160788a64e17187502a9cfb2a"
+      },
+      "challenge/runs/claude-haiku-5-5/traces.jsonl": {
+        "expected_sha256": "05e90137a40a618f595da82d84345fdf98a196e9cc0355c93253f6a428ebb097",
+        "actual_sha256": "05e90137a40a618f595da82d84345fdf98a196e9cc0355c93253f6a428ebb097"
+      },
+      "challenge/runs/claude-haiku-5-5/events.jsonl": {
+        "expected_sha256": "df1eb9d7fc6e7311015317ec88af56ee40d5af15d99d1ab2b793488c3fac8dce",
+        "actual_sha256": "df1eb9d7fc6e7311015317ec88af56ee40d5af15d99d1ab2b793488c3fac8dce"
+      },
+      "challenge/runs/claude-sonnet-5-5/config.json": {
+        "expected_sha256": "8b1100613ddf57f053df30f7905aa55eadac66d4a81cd8f46aa3abceb80b7f68",
+        "actual_sha256": "8b1100613ddf57f053df30f7905aa55eadac66d4a81cd8f46aa3abceb80b7f68"
+      },
+      "challenge/runs/claude-sonnet-5-5/results.json": {
+        "expected_sha256": "707662362f1c17c31eb71865e972148ec6ead1c1c8fe1102ec7975ab16fd9a6a",
+        "actual_sha256": "707662362f1c17c31eb71865e972148ec6ead1c1c8fe1102ec7975ab16fd9a6a"
+      },
+      "challenge/runs/claude-sonnet-5-5/traces.jsonl": {
+        "expected_sha256": "982f056394a1b7fb7233fbaef5725c63234a2a4c664bb8c15df79e8b80539be6",
+        "actual_sha256": "982f056394a1b7fb7233fbaef5725c63234a2a4c664bb8c15df79e8b80539be6"
+      },
+      "challenge/runs/claude-sonnet-5-5/events.jsonl": {
+        "expected_sha256": "854ec9133fda691a47f65cd73e84ccde1cb6c8adbd0cc7455463d3c29dc1bbbc",
+        "actual_sha256": "854ec9133fda691a47f65cd73e84ccde1cb6c8adbd0cc7455463d3c29dc1bbbc"
+      },
+      "pilot/sources.json": {
+        "expected_sha256": "aca577c69ce9cbdca12f1d7cdab06c511f5e849ae878956b0e32340176814ab7",
+        "actual_sha256": "aca577c69ce9cbdca12f1d7cdab06c511f5e849ae878956b0e32340176814ab7"
+      },
+      "pilot/REPORT.md": {
+        "expected_sha256": "9dacaa9141dd0450d0359d5d966e50f34f198a76aca4b32c2c8b1d9ca0128f33",
+        "actual_sha256": "9dacaa9141dd0450d0359d5d966e50f34f198a76aca4b32c2c8b1d9ca0128f33"
+      },
+      "pilot/results.json": {
+        "expected_sha256": "c5cf03706cb90bdc53126b0f3c4690b9f3246f3c78728cb114020cddd10ca7e1",
+        "actual_sha256": "c5cf03706cb90bdc53126b0f3c4690b9f3246f3c78728cb114020cddd10ca7e1"
+      },
+      "pilot/templates.json": {
+        "expected_sha256": "8260a52d0692d18f3711f2ef5f11b48c5d6c20db80b7ab15a538cd4d06870052",
+        "actual_sha256": "8260a52d0692d18f3711f2ef5f11b48c5d6c20db80b7ab15a538cd4d06870052"
+      },
+      "pilot/dataset/pairs.jsonl": {
+        "expected_sha256": "16b409c8e955d7e4d40f42b6e458a71d326de734d4c27c32246827fe6a12b558",
+        "actual_sha256": "16b409c8e955d7e4d40f42b6e458a71d326de734d4c27c32246827fe6a12b558"
+      },
+      "pilot/dataset/cases.jsonl": {
+        "expected_sha256": "3cad38a01d608cc7fe84f7df38f1d2dc31b647bda5f55fe9d9ccdf1fae4e7836",
+        "actual_sha256": "3cad38a01d608cc7fe84f7df38f1d2dc31b647bda5f55fe9d9ccdf1fae4e7836"
+      },
+      "pilot/dataset/tool_contract.json": {
+        "expected_sha256": "e7c73a084dbf421682a64a2c9dc2cd7d84b4eafecd8369c0bbf0231b2c7d526c",
+        "actual_sha256": "e7c73a084dbf421682a64a2c9dc2cd7d84b4eafecd8369c0bbf0231b2c7d526c"
+      },
+      "pilot/dataset/agent_inputs.jsonl": {
+        "expected_sha256": "9f2d39959919374e2f84a71322ec0c772c34d7749aff793c2b98cc07459e813d",
+        "actual_sha256": "9f2d39959919374e2f84a71322ec0c772c34d7749aff793c2b98cc07459e813d"
+      },
+      "pilot/dataset/answers.jsonl": {
+        "expected_sha256": "81b8ece5408648a4016867b015bf0cbb9089f0b8e3f9f2bf872d5cb331c3b2fb",
+        "actual_sha256": "81b8ece5408648a4016867b015bf0cbb9089f0b8e3f9f2bf872d5cb331c3b2fb"
+      },
+      "pilot/dataset/manifest.json": {
+        "expected_sha256": "1315282724436151db0cac799824a5139fb46fcc597c1bb9c1bafb558ab43aa4",
+        "actual_sha256": "1315282724436151db0cac799824a5139fb46fcc597c1bb9c1bafb558ab43aa4"
+      },
+      "pilot/examples/agent-input.json": {
+        "expected_sha256": "a968dbbe29e0f0ac8975f3626d1b406a413bf785d741a9b114be8abc52641a8d",
+        "actual_sha256": "a968dbbe29e0f0ac8975f3626d1b406a413bf785d741a9b114be8abc52641a8d"
+      },
+      "pilot/examples/answer-key.json": {
+        "expected_sha256": "7c13b4689e00c159a693fdd84f2951237baabef323a5cf4a2326c7ef9f84a990",
+        "actual_sha256": "7c13b4689e00c159a693fdd84f2951237baabef323a5cf4a2326c7ef9f84a990"
+      },
+      "pilot/examples/case.json": {
+        "expected_sha256": "51dd7b56f6f09b36ed930708cb1d3747c4c08751e63a6763e8d57a5b01b2f12b",
+        "actual_sha256": "51dd7b56f6f09b36ed930708cb1d3747c4c08751e63a6763e8d57a5b01b2f12b"
+      },
+      "pilot/source_snapshots/appointment.html": {
+        "expected_sha256": "00c08cb94967d4a5aef59e337fa69add7a004602e554494cf0d8c68861b2943d",
+        "actual_sha256": "00c08cb94967d4a5aef59e337fa69add7a004602e554494cf0d8c68861b2943d"
+      },
+      "pilot/source_snapshots/appeal.html": {
+        "expected_sha256": "a21b2b6c6999d9090aaccd4c84c8ed553668f66c886c47ded6013642c3455440",
+        "actual_sha256": "a21b2b6c6999d9090aaccd4c84c8ed553668f66c886c47ded6013642c3455440"
+      },
+      "pilot/source_snapshots/swo.html": {
+        "expected_sha256": "7d1c51060322750c25873286127f4e23a8385e9039be5e0e8083c201ae044396",
+        "actual_sha256": "7d1c51060322750c25873286127f4e23a8385e9039be5e0e8083c201ae044396"
+      },
+      "pilot/source_snapshots/pa.pdf": {
+        "expected_sha256": "18556c24cb62870590845307f3a744e74babc30ed870344768fbebab280f5be6",
+        "actual_sha256": "18556c24cb62870590845307f3a744e74babc30ed870344768fbebab280f5be6"
+      },
+      "pilot/source_snapshots/manual.pdf": {
+        "expected_sha256": "03b0407de6c7d4b2dc0a1b7980538315c4452df8e5525b75446ac7df2ac70203",
+        "actual_sha256": "03b0407de6c7d4b2dc0a1b7980538315c4452df8e5525b75446ac7df2ac70203"
+      },
+      "pilot/source_snapshots/form.pdf": {
+        "expected_sha256": "bc80ed47453ddabf3628106fbdf6151c13951be697a2098d548fa7f7be92f09c",
+        "actual_sha256": "bc80ed47453ddabf3628106fbdf6151c13951be697a2098d548fa7f7be92f09c"
+      },
+      "pilot/runs/harness-v1.py": {
+        "expected_sha256": "035a78de3a0f15888a459542448c2efafd5078c035d0af951715d33cce82b7f9",
+        "actual_sha256": "035a78de3a0f15888a459542448c2efafd5078c035d0af951715d33cce82b7f9"
+      },
+      "pilot/reviews/astra-execution-recheck.json": {
+        "expected_sha256": "d4c63bac36295dd041474b4731d15da14cb6f43c74edea32b90f3d9193f572a5",
+        "actual_sha256": "d4c63bac36295dd041474b4731d15da14cb6f43c74edea32b90f3d9193f572a5"
+      },
+      "pilot/reviews/astra-execution-audit.json": {
+        "expected_sha256": "995edd2fea6732fa360b42fe26cfd32e9881e33c94040e4d52ed13357b436644",
+        "actual_sha256": "995edd2fea6732fa360b42fe26cfd32e9881e33c94040e4d52ed13357b436644"
+      },
+      "pilot/reviews/astra-case-review.json": {
+        "expected_sha256": "69e6e94483471657ecdffa7f390baf344ec18762631ee2069118a68b9778f7b0",
+        "actual_sha256": "69e6e94483471657ecdffa7f390baf344ec18762631ee2069118a68b9778f7b0"
+      },
+      "pilot/reviews/astra-source-recheck.json": {
+        "expected_sha256": "8405648787b5f5fd3929bf61c1524b6b1d861f61c56f791e96af1b83b94ca7b0",
+        "actual_sha256": "8405648787b5f5fd3929bf61c1524b6b1d861f61c56f791e96af1b83b94ca7b0"
+      },
+      "pilot/reviews/astra-source-review.json": {
+        "expected_sha256": "cb81c7f822a74dd3d57090e28ee2ad4796a06a08bdb1fe643791c8fd18499635",
+        "actual_sha256": "cb81c7f822a74dd3d57090e28ee2ad4796a06a08bdb1fe643791c8fd18499635"
+      },
+      "pilot/reviews/review-summary.json": {
+        "expected_sha256": "caff499e6b9bedf499015f7ae0a2efb6c325b7cab858ff77756d2ccb0051f927",
+        "actual_sha256": "caff499e6b9bedf499015f7ae0a2efb6c325b7cab858ff77756d2ccb0051f927"
+      },
+      "pilot/reviews/astra-handoff-review.json": {
+        "expected_sha256": "cac7d999ce4753b1400c5441cb205abcba16ff634199f732ba04f390608e78f6",
+        "actual_sha256": "cac7d999ce4753b1400c5441cb205abcba16ff634199f732ba04f390608e78f6"
+      },
+      "pilot/reviews/astra-case-recheck.json": {
+        "expected_sha256": "5afa456a614e4bfdf1b98e34580ae758fb77e5c29c3ccb22f089db866c54340e",
+        "actual_sha256": "5afa456a614e4bfdf1b98e34580ae758fb77e5c29c3ccb22f089db866c54340e"
+      },
+      "pilot/runs/claude-haiku-5-5/config.json": {
+        "expected_sha256": "e2c792087d84f3f93850c8b8a998570abf165809e5166e85e3156c0eeada12dc",
+        "actual_sha256": "e2c792087d84f3f93850c8b8a998570abf165809e5166e85e3156c0eeada12dc"
+      },
+      "pilot/runs/claude-haiku-5-5/results.json": {
+        "expected_sha256": "e49cfae17c12b9ef8d851d7374e72ba30a741b32307fcc8734bf4cd1075af283",
+        "actual_sha256": "e49cfae17c12b9ef8d851d7374e72ba30a741b32307fcc8734bf4cd1075af283"
+      },
+      "pilot/runs/claude-haiku-5-5/traces.jsonl": {
+        "expected_sha256": "feca41f5aa4a68b0b0770acf4c9bc4c3d506bc7ee8faeb1e1f3d89be8d957928",
+        "actual_sha256": "feca41f5aa4a68b0b0770acf4c9bc4c3d506bc7ee8faeb1e1f3d89be8d957928"
+      },
+      "pilot/runs/claude-sonnet-5-5/config.json": {
+        "expected_sha256": "dd3e901f286b1ccc5c46890e71ce9686e33b374ec01fc35bd51b620701fed0a3",
+        "actual_sha256": "dd3e901f286b1ccc5c46890e71ce9686e33b374ec01fc35bd51b620701fed0a3"
+      },
+      "pilot/runs/claude-sonnet-5-5/results.json": {
+        "expected_sha256": "a3d57561836073bac56a4c27c43f25e5a37a155b0955d5969bfea0ddf4fcbed4",
+        "actual_sha256": "a3d57561836073bac56a4c27c43f25e5a37a155b0955d5969bfea0ddf4fcbed4"
+      },
+      "pilot/runs/claude-sonnet-5-5/traces.jsonl": {
+        "expected_sha256": "72bc122d5542b5bf3f90cd25c908c03cd7011ebba5f5459814b560b66d3239c9",
+        "actual_sha256": "72bc122d5542b5bf3f90cd25c908c03cd7011ebba5f5459814b560b66d3239c9"
+      },
+      "pilot/runs/failed-setup/README.md": {
+        "expected_sha256": "01924dfd4482efa0df5ccfc7adfcaf6049b9169a729450fcd96b97fdbfce46f2",
+        "actual_sha256": "01924dfd4482efa0df5ccfc7adfcaf6049b9169a729450fcd96b97fdbfce46f2"
+      },
+      "pilot/runs/failed-setup/claude-haiku-5-5/config.json": {
+        "expected_sha256": "89df059714f6382b2a5116dd56cbe6dd740ec281a53e56f42f4b5dab3e04301c",
+        "actual_sha256": "89df059714f6382b2a5116dd56cbe6dd740ec281a53e56f42f4b5dab3e04301c"
+      },
+      "pilot/runs/failed-setup/claude-haiku-5-5/results.json": {
+        "expected_sha256": "52789333b0a3da1579b5c928a38382203dc0b45430a67f776e6247833711945e",
+        "actual_sha256": "52789333b0a3da1579b5c928a38382203dc0b45430a67f776e6247833711945e"
+      },
+      "pilot/runs/failed-setup/claude-haiku-5-5/traces.jsonl": {
+        "expected_sha256": "b868c77133f8bf4643bb285404469256b53ada9e5823c82d1157bd9597d25bbc",
+        "actual_sha256": "b868c77133f8bf4643bb285404469256b53ada9e5823c82d1157bd9597d25bbc"
+      },
+      "pilot/runs/failed-setup/claude-sonnet-5-5/config.json": {
+        "expected_sha256": "34e6bfca3a00faa075fc666f702a550392f712577bf2431d30758975320bb12f",
+        "actual_sha256": "34e6bfca3a00faa075fc666f702a550392f712577bf2431d30758975320bb12f"
+      },
+      "pilot/runs/failed-setup/claude-sonnet-5-5/results.json": {
+        "expected_sha256": "aa3574f9f110823e7e6728489ee44fff91776436e5146c736ef8bab431cb78a0",
+        "actual_sha256": "aa3574f9f110823e7e6728489ee44fff91776436e5146c736ef8bab431cb78a0"
+      },
+      "pilot/runs/failed-setup/claude-sonnet-5-5/traces.jsonl": {
+        "expected_sha256": "c1ea35278e1ea7dd3ebda7579d24b2e23d53475f1b817ede56ac3198513961a5",
+        "actual_sha256": "c1ea35278e1ea7dd3ebda7579d24b2e23d53475f1b817ede56ac3198513961a5"
+      },
+      "realism/baseline-subset.json": {
+        "expected_sha256": "b7bc4ec8f2e02fbc87045bffb4dac147c61716ddd4ac7c2e854ede61fbbc1320",
+        "actual_sha256": "b7bc4ec8f2e02fbc87045bffb4dac147c61716ddd4ac7c2e854ede61fbbc1320"
+      },
+      "realism/sources.json": {
+        "expected_sha256": "9e261b5187f3eda8315bfa2f9111c3af73fea1877a02b0034267f97dfcb30a1b",
+        "actual_sha256": "9e261b5187f3eda8315bfa2f9111c3af73fea1877a02b0034267f97dfcb30a1b"
+      },
+      "realism/baseline-protection.json": {
+        "expected_sha256": "ffd65a5b5041bc6e81bcb844cb2df7a4a9cee29f2d949e80525df2e48b1e091f",
+        "actual_sha256": "ffd65a5b5041bc6e81bcb844cb2df7a4a9cee29f2d949e80525df2e48b1e091f"
+      },
+      "realism/REPORT.md": {
+        "expected_sha256": "c15e7683f569d782ac39e43d6b19cfa4e115ec77b9fd67531b2f2d0f106bd869",
+        "actual_sha256": "c15e7683f569d782ac39e43d6b19cfa4e115ec77b9fd67531b2f2d0f106bd869"
+      },
+      "realism/results.json": {
+        "expected_sha256": "e13d75b229a294f13fcdeacb203b68ad04a9dcaa72b515353c34e7742ea02f2c",
+        "actual_sha256": "e13d75b229a294f13fcdeacb203b68ad04a9dcaa72b515353c34e7742ea02f2c"
+      },
+      "realism/templates.json": {
+        "expected_sha256": "a12b47071f5dea1e5cde20cecec109c17d5fc6b9998b578e8d7c2f6c32503490",
+        "actual_sha256": "a12b47071f5dea1e5cde20cecec109c17d5fc6b9998b578e8d7c2f6c32503490"
+      },
+      "realism/README.md": {
+        "expected_sha256": "1ab429f30758df511299f952845a1ff3d6a13e4f38ef8504ae3f18463320ab10",
+        "actual_sha256": "1ab429f30758df511299f952845a1ff3d6a13e4f38ef8504ae3f18463320ab10"
+      },
+      "realism/pre-run-freeze.json": {
+        "expected_sha256": "b0bb32b517c31b018f7dfcdfb0ac910087b6bcc0a6b793f8cfc3b5ec896dfbc6",
+        "actual_sha256": "b0bb32b517c31b018f7dfcdfb0ac910087b6bcc0a6b793f8cfc3b5ec896dfbc6"
+      },
+      "realism/lineage.json": {
+        "expected_sha256": "31fc77ecaae865229aa6362b710beaed17c980af12d6a248208ff77dd8df0700",
+        "actual_sha256": "31fc77ecaae865229aa6362b710beaed17c980af12d6a248208ff77dd8df0700"
+      },
+      "realism/dataset/pairs.jsonl": {
+        "expected_sha256": "0e8b8013589207035ff34ebe68f8c9bd25da169e900e53d9bc256850cfdc90b4",
+        "actual_sha256": "0e8b8013589207035ff34ebe68f8c9bd25da169e900e53d9bc256850cfdc90b4"
+      },
+      "realism/dataset/cases.jsonl": {
+        "expected_sha256": "d69cebd8c79b3debf05bf2a07f19e8aebe20ce30a3cb1fdfe53824fcfcb04d0d",
+        "actual_sha256": "d69cebd8c79b3debf05bf2a07f19e8aebe20ce30a3cb1fdfe53824fcfcb04d0d"
+      },
+      "realism/dataset/tool_contract.json": {
+        "expected_sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06",
+        "actual_sha256": "60917ed0d6024af997c9d4ae7abc405bcccae02565865bc1182b638d3aaebd06"
+      },
+      "realism/dataset/agent_inputs.jsonl": {
+        "expected_sha256": "3c9f8298303b5c5680fc04bf22e26aa60cf68c8d933da2ebb2c95d6f182d0773",
+        "actual_sha256": "3c9f8298303b5c5680fc04bf22e26aa60cf68c8d933da2ebb2c95d6f182d0773"
+      },
+      "realism/dataset/answers.jsonl": {
+        "expected_sha256": "429c38611af8a160f2e50f7145218f2e820c31e821e730b6331ae06ca7e4caec",
+        "actual_sha256": "429c38611af8a160f2e50f7145218f2e820c31e821e730b6331ae06ca7e4caec"
+      },
+      "realism/dataset/manifest.json": {
+        "expected_sha256": "bfb3a98bc98820c420fd406a40b13aa8860cf7699485bc7cd3031331a0f6c031",
+        "actual_sha256": "bfb3a98bc98820c420fd406a40b13aa8860cf7699485bc7cd3031331a0f6c031"
+      },
+      "realism/examples/agent-input.json": {
+        "expected_sha256": "ef89066648b65cfc280aefbdb6afd455be5a91185a4fc5e271a1ae9b5c3ee015",
+        "actual_sha256": "ef89066648b65cfc280aefbdb6afd455be5a91185a4fc5e271a1ae9b5c3ee015"
+      },
+      "realism/examples/answer-key.json": {
+        "expected_sha256": "7281f2d00c95ead9c270812ef87efb9c17a3b70e75605c36ab979bd8d577243b",
+        "actual_sha256": "7281f2d00c95ead9c270812ef87efb9c17a3b70e75605c36ab979bd8d577243b"
+      },
+      "realism/examples/case.json": {
+        "expected_sha256": "bccb197f06d026c5dcf4f09c5fac65226978e483635d8466e5d2b7440a144001",
+        "actual_sha256": "bccb197f06d026c5dcf4f09c5fac65226978e483635d8466e5d2b7440a144001"
+      },
+      "realism/runs/harness-v1.2.py": {
+        "expected_sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288",
+        "actual_sha256": "c3a362dd403669d03af22ab9cf15cc4aebc02fcd0ce4a0ebb7b881e88035a288"
+      },
+      "realism/reviews/astra-execution-review.json": {
+        "expected_sha256": "ea0dd828d85f2c415828c36274157560c0fe8d084b5b405afd3153156753875a",
+        "actual_sha256": "ea0dd828d85f2c415828c36274157560c0fe8d084b5b405afd3153156753875a"
+      },
+      "realism/reviews/astra-blind-review.json": {
+        "expected_sha256": "725d7e588008bff81addb620bead830751ac2bbe1e134d7a878e228d038f636a",
+        "actual_sha256": "725d7e588008bff81addb620bead830751ac2bbe1e134d7a878e228d038f636a"
+      },
+      "realism/reviews/astra-results-review.json": {
+        "expected_sha256": "12a3f3a04d36e64ac0a25b4921247c8b8735fc4989ad5c6d56d9957450a4364d",
+        "actual_sha256": "12a3f3a04d36e64ac0a25b4921247c8b8735fc4989ad5c6d56d9957450a4364d"
+      },
+      "realism/reviews/run-integrity-check.json": {
+        "expected_sha256": "c9e8013bead8726114a4d84046cb4507df1e5aeeb5a46b5185da110aea29693f",
+        "actual_sha256": "c9e8013bead8726114a4d84046cb4507df1e5aeeb5a46b5185da110aea29693f"
+      },
+      "realism/reviews/package-integrity-check.json": {
+        "expected_sha256": "314ef66762a4e3dbef7b45d9b07d575dc238af5413ed15bd07d6f0dd1950bab1",
+        "actual_sha256": "314ef66762a4e3dbef7b45d9b07d575dc238af5413ed15bd07d6f0dd1950bab1"
+      },
+      "realism/reviews/astra-source-review.json": {
+        "expected_sha256": "818c09378bcea2c576b73c6a2ab4d6f588574e8ae6a95cdfd2e7e1478550dd97",
+        "actual_sha256": "818c09378bcea2c576b73c6a2ab4d6f588574e8ae6a95cdfd2e7e1478550dd97"
+      },
+      "realism/reviews/review-summary.json": {
+        "expected_sha256": "05b9d5f1465f2ac87e26e0828e2eb71f21c852c3fcac86198da1917bdcc32add",
+        "actual_sha256": "05b9d5f1465f2ac87e26e0828e2eb71f21c852c3fcac86198da1917bdcc32add"
+      },
+      "realism/reruns/2026-10-08-01/REPORT.md": {
+        "expected_sha256": "3196ac5ec11a56fc2a5c5be7f73b804fe75fd6d886ddcb64cd9e1fa4184683ce",
+        "actual_sha256": "3196ac5ec11a56fc2a5c5be7f73b804fe75fd6d886ddcb64cd9e1fa4184683ce"
+      },
+      "realism/reruns/2026-10-08-01/results.json": {
+        "expected_sha256": "e96cdd789d2213e0b2676b67acdb3200bf9a5628dbed4c872844cbd04bb03bf6",
+        "actual_sha256": "e96cdd789d2213e0b2676b67acdb3200bf9a5628dbed4c872844cbd04bb03bf6"
+      },
+      "realism/reruns/2026-10-08-01/astra-results-review.json": {
+        "expected_sha256": "4ed509ef928471db639f96c8c7494a660027de6808e8d1bf04b039592eda8cde",
+        "actual_sha256": "4ed509ef928471db639f96c8c7494a660027de6808e8d1bf04b039592eda8cde"
+      },
+      "realism/reruns/2026-10-08-01/run-integrity-check.json": {
+        "expected_sha256": "d6c6c1299e55366c43a4862dd318fb8e05d10ea1c294a20ea74a558c6f0fbbbe",
+        "actual_sha256": "d6c6c1299e55366c43a4862dd318fb8e05d10ea1c294a20ea74a558c6f0fbbbe"
+      },
+      "realism/reruns/2026-10-08-01/pre-run-freeze.json": {
+        "expected_sha256": "33ae85c812cd27e1b2f5f0bfa161b39c389c8e1d3a5f90fd87abf9dc041ea14f",
+        "actual_sha256": "33ae85c812cd27e1b2f5f0bfa161b39c389c8e1d3a5f90fd87abf9dc041ea14f"
+      },
+      "realism/reruns/2026-10-08-01/claude-haiku-5-5/config.json": {
+        "expected_sha256": "37f314c352ef6d21fbeef2b3334b16b4b3780bf9cc98fd9ef374ef215b85efde",
+        "actual_sha256": "37f314c352ef6d21fbeef2b3334b16b4b3780bf9cc98fd9ef374ef215b85efde"
+      },
+      "realism/reruns/2026-10-08-01/claude-haiku-5-5/results.json": {
+        "expected_sha256": "a8c496f14e50bdcd1790df76d286b607e1cce652431f45e5b6b268f19d411fad",
+        "actual_sha256": "a8c496f14e50bdcd1790df76d286b607e1cce652431f45e5b6b268f19d411fad"
+      },
+      "realism/reruns/2026-10-08-01/claude-haiku-5-5/traces.jsonl": {
+        "expected_sha256": "0c4d562e4fde42d4d8b5d4cc32a0e14316f740b0273986e7157698b04bb76153",
+        "actual_sha256": "0c4d562e4fde42d4d8b5d4cc32a0e14316f740b0273986e7157698b04bb76153"
+      },
+      "realism/reruns/2026-10-08-01/claude-haiku-5-5/events.jsonl": {
+        "expected_sha256": "8b16d9b7338163ee3199d0393136be873486e4fa8b4891c6fe781ab8bb02fb14",
+        "actual_sha256": "8b16d9b7338163ee3199d0393136be873486e4fa8b4891c6fe781ab8bb02fb14"
+      },
+      "realism/reruns/2026-10-08-01/claude-sonnet-5-5/config.json": {
+        "expected_sha256": "84ad3d18caef6f3775d0556c38d061924922ffdaa174d788eba03251a0f36f0a",
+        "actual_sha256": "84ad3d18caef6f3775d0556c38d061924922ffdaa174d788eba03251a0f36f0a"
+      },
+      "realism/reruns/2026-10-08-01/claude-sonnet-5-5/results.json": {
+        "expected_sha256": "08b90854ff784f119f48cceac9e36db4e061e057cca520176cce16974d4ee244",
+        "actual_sha256": "08b90854ff784f119f48cceac9e36db4e061e057cca520176cce16974d4ee244"
+      },
+      "realism/reruns/2026-10-08-01/claude-sonnet-5-5/traces.jsonl": {
+        "expected_sha256": "c5382c5a3df382a37d4beeb9df8314f0992b61b392e776b2b3db7674015111cd",
+        "actual_sha256": "c5382c5a3df382a37d4beeb9df8314f0992b61b392e776b2b3db7674015111cd"
+      },
+      "realism/reruns/2026-10-08-01/claude-sonnet-5-5/events.jsonl": {
+        "expected_sha256": "1bf9ed11e7745226ad5528f62c6d10837df61bbda609c11263c40ea96c87b00c",
+        "actual_sha256": "1bf9ed11e7745226ad5528f62c6d10837df61bbda609c11263c40ea96c87b00c"
+      },
+      "realism/runs/claude-haiku-5-5/config.json": {
+        "expected_sha256": "37f314c352ef6d21fbeef2b3334b16b4b3780bf9cc98fd9ef374ef215b85efde",
+        "actual_sha256": "37f314c352ef6d21fbeef2b3334b16b4b3780bf9cc98fd9ef374ef215b85efde"
+      },
+      "realism/runs/claude-haiku-5-5/results.json": {
+        "expected_sha256": "a8c496f14e50bdcd1790df76d286b607e1cce652431f45e5b6b268f19d411fad",
+        "actual_sha256": "a8c496f14e50bdcd1790df76d286b607e1cce652431f45e5b6b268f19d411fad"
+      },
+      "realism/runs/claude-haiku-5-5/traces.jsonl": {
+        "expected_sha256": "f88ee83d594f6504895c7cff1b1a5f188b7a495903106046295904b17d42b58a",
+        "actual_sha256": "f88ee83d594f6504895c7cff1b1a5f188b7a495903106046295904b17d42b58a"
+      },
+      "realism/runs/claude-haiku-5-5/events.jsonl": {
+        "expected_sha256": "feac99086d4daaba51a7a9de8a644339a86b2347b159c4411c2b02149b93020e",
+        "actual_sha256": "feac99086d4daaba51a7a9de8a644339a86b2347b159c4411c2b02149b93020e"
+      },
+      "realism/runs/claude-sonnet-5-5/config.json": {
+        "expected_sha256": "84ad3d18caef6f3775d0556c38d061924922ffdaa174d788eba03251a0f36f0a",
+        "actual_sha256": "84ad3d18caef6f3775d0556c38d061924922ffdaa174d788eba03251a0f36f0a"
+      },
+      "realism/runs/claude-sonnet-5-5/results.json": {
+        "expected_sha256": "08b90854ff784f119f48cceac9e36db4e061e057cca520176cce16974d4ee244",
+        "actual_sha256": "08b90854ff784f119f48cceac9e36db4e061e057cca520176cce16974d4ee244"
+      },
+      "realism/runs/claude-sonnet-5-5/traces.jsonl": {
+        "expected_sha256": "46c725f6a30b658eb43c5e2fb53ea9d91f3082e5553285c904643ffce8dc23d0",
+        "actual_sha256": "46c725f6a30b658eb43c5e2fb53ea9d91f3082e5553285c904643ffce8dc23d0"
+      },
+      "realism/runs/claude-sonnet-5-5/events.jsonl": {
+        "expected_sha256": "092256af2588af27c2091f57e2b25d4a907e018baad564c083cdf3565a307156",
+        "actual_sha256": "092256af2588af27c2091f57e2b25d4a907e018baad564c083cdf3565a307156"
+      },
+      "kwts-challenge.zip": {
+        "expected_sha256": "846f7d0db469133a909bbf3857ea1bdcb6746997f86a0e635526966b9cb69e51",
+        "actual_sha256": "846f7d0db469133a909bbf3857ea1bdcb6746997f86a0e635526966b9cb69e51"
+      },
+      "kwts-pilot.zip": {
+        "expected_sha256": "1401e1da5f036840562e10cd37cecedcdb1e578e81e18ae3b3277b253cd8c37c",
+        "actual_sha256": "1401e1da5f036840562e10cd37cecedcdb1e578e81e18ae3b3277b253cd8c37c"
+      },
+      "kwts-realism.zip": {
+        "expected_sha256": "672652e03a3b6dec511773aa667e9ea706bc42ae0e50d607f469167fbe8d32ba",
+        "actual_sha256": "672652e03a3b6dec511773aa667e9ea706bc42ae0e50d607f469167fbe8d32ba"
+      }
+    }
+  },
+  "publishable_scan": {
+    "files_scanned": 81,
+    "findings": [],
+    "scope": "Local home-directory absolute paths, common provider/repository credential token shapes and private-key headers; no claim of exhaustive secret detection."
+  },
+  "input_receipts": {
+    "runs/claude-haiku-5-5/config.json": {
+      "sha256": "d5538209b7c79fe64eea58cdc22a58814dd9fa3da4d562ca6f3d0229f2f24e74",
+      "bytes": 4245
+    },
+    "runs/claude-haiku-5-5/events.jsonl": {
+      "sha256": "6a8dc1abb5fdd845aceace41801cfe8af6778df767683256c1d240c986bf69bc",
+      "bytes": 593142
+    },
+    "runs/claude-haiku-5-5/traces.jsonl": {
+      "sha256": "4be8ff98651c8aa39674a5a48ae8a4a115a812fe39044acabc7882d95a740a4b",
+      "bytes": 978221
+    },
+    "runs/claude-haiku-5-5/results.json": {
+      "sha256": "2e0e6f9fe185fbf0e72c826191258ef0f5a76c12871795717f19acc79b42c9c6",
+      "bytes": 40160
+    },
+    "runs/claude-sonnet-5-5/config.json": {
+      "sha256": "c016225ca4cb8f080aace82ae38b0e79d63820c74888c7b6b24468ebf0dfcdb9",
+      "bytes": 4246
+    },
+    "runs/claude-sonnet-5-5/events.jsonl": {
+      "sha256": "ddd61d597885af7330e9b0d15aebd1f3b0715524b22cf7d2c6a724b16f4763f3",
+      "bytes": 506369
+    },
+    "runs/claude-sonnet-5-5/traces.jsonl": {
+      "sha256": "0028007c2c09dd9cbd8167f048833b3c55c7706537490d7067dc4c9adaf08cee",
+      "bytes": 676883
+    },
+    "runs/claude-sonnet-5-5/results.json": {
+      "sha256": "3ab3968e900560dcf372d028b51c79208a0b222aa98aaec9d5aa396b5d888abd",
+      "bytes": 40095
+    },
+    "runs/claude-opus-5-5/config.json": {
+      "sha256": "5cd3443194f2035bcfcaec6fb1123909019d9e3a13bb5fafcaff79371852e38d",
+      "bytes": 4244
+    },
+    "runs/claude-opus-5-5/events.jsonl": {
+      "sha256": "c81120f50d339df0a16ef1042b03993fd4cc8da8946094c74454045cdae23c2b",
+      "bytes": 536447
+    },
+    "runs/claude-opus-5-5/traces.jsonl": {
+      "sha256": "67bd6585bf7afcf916bc34dc543d3bf1a2ed72a5f096b0c172e9d6d9d77f5f1e",
+      "bytes": 724798
+    },
+    "runs/claude-opus-5-5/results.json": {
+      "sha256": "a16cacefaee715e82f4965342a9d5ded005c93e826427195fb83319229f13463",
+      "bytes": 40093
+    },
+    "runs/claude-haiku-4-5-20251001/config.json": {
+      "sha256": "1d76ea054eebd55ccbcf50626cb246273e485a03a07fa6584efe5a407205659d",
+      "bytes": 4254
+    },
+    "runs/claude-haiku-4-5-20251001/events.jsonl": {
+      "sha256": "29a8fe4d57e4ea5243f4a67263d702dc22ec6138335cd9d78dc9d2e2a1fa78ee",
+      "bytes": 657026
+    },
+    "runs/claude-haiku-4-5-20251001/traces.jsonl": {
+      "sha256": "4a25bb2a1c1e385d7b7e1b39a980e2552f363edbdb6b911a229f604ec54244b1",
+      "bytes": 850699
+    },
+    "runs/claude-haiku-4-5-20251001/results.json": {
+      "sha256": "4f05ae8f2f623217873102a74c2ff145760848f626f896081694dc2ad6c6668f",
+      "bytes": 40242
+    },
+    "scripts/summarize_runs.py": {
+      "sha256": "f28f932d6e5001fa25b4bae2ef32a21d65d636a1f27c329c16db6ddd6bca6e6f",
+      "bytes": 20655
+    },
+    "scripts/build_report.py": {
+      "sha256": "1623e867bd58eaef6b1dfaec85f494922e316440f781fe944e60ceac8e8483fc",
+      "bytes": 25269
+    },
+    "reports/native-summary.json": {
+      "sha256": "7cd9145cbe245cb749d10640da00a2400ee03edc540cac91e581cca184f93e57",
+      "bytes": 201169
+    },
+    "results.json": {
+      "sha256": "3bc5ed79295b347366b5dad4d7f2aa7bfb309429ead66d5873077bd2f74778c0",
+      "bytes": 411146
+    },
+    "REPORT.md": {
+      "sha256": "64c87ebf75397da5a9ff656d7fdd105adee6dce0b17d0a785d926b546a224d1b",
+      "bytes": 15828
+    },
+    "README.md": {
+      "sha256": "b3e597fa808faeae601cdb06d5b1543e3a3665af5878accfbdfd50e439648af2",
+      "bytes": 8977
+    },
+    "pre-run-freeze.json": {
+      "sha256": "364edd1ce730f7073f6ee69ecffb4026b2046664f53f6dbdc1171ee35c642909",
+      "bytes": 8658
+    },
+    "publication-receipt.json": {
+      "sha256": "a30b4c70ce25362fecfc94e836eb1941bcfdea798ecbd44beb88a7b6f82ffd28",
+      "bytes": 4565
+    },
+    "baseline-protection.json": {
+      "sha256": "00383a6f8b4e8e94103c20e623a91ead61c78dbc65e3d18f46d4e2b8c0b9b001",
+      "bytes": 16316
+    },
+    "reviews/astra-results-claude-haiku-5-5.json": {
+      "sha256": "9ff6b6a1066f9e243add0bbaf2d61ffd7113c818d4611fe4f0956683bc6faf8d",
+      "bytes": 416936
+    },
+    "reviews/astra-results-claude-sonnet-5-5.json": {
+      "sha256": "f443b611d774f858f66a51c4d9ba024ea53b9965cf335c45a9595abfa943d4d1",
+      "bytes": 308921
+    },
+    "reviews/astra-results-claude-opus-5-5.json": {
+      "sha256": "800448816557a041b9e2e167d5db394bd0096b86b62aa841845bc96a89487598",
+      "bytes": 605686
+    },
+    "reviews/astra-results-claude-haiku-4-5-20251001.json": {
+      "sha256": "1dccce6145a49ad85d1f536fd1f09068b8f5d61c9edb982dcf149e5c287ef29a",
+      "bytes": 1164569
+    }
+  },
+  "publication_interpretation": "Report and README describe one provider, one repetition, public correlated synthetic development cases and AI-only review. They do not assert hospital production safety, clinical validity or regulatory compliance."
+}
