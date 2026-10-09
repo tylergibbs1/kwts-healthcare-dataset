@@ -1,0 +1,204 @@
+{
+  "schema": "kwts-execution-summary-v1",
+  "scope": "completed_protected_challenge_cohorts",
+  "planned_episodes": 450,
+  "recorded_episodes": 450,
+  "cohort_reported_token_usage": {
+    "usage_known_episodes": 449,
+    "usage_missing_or_partial_episodes": 1,
+    "usage_partially_known_episodes": 0,
+    "reported_totals": {
+      "input_tokens": 9274563,
+      "output_tokens": 264951,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cached_input_tokens": 3904000
+    },
+    "episodes_reporting_field": {
+      "input_tokens": 449,
+      "output_tokens": 449,
+      "cache_creation_input_tokens": 300,
+      "cache_read_input_tokens": 300,
+      "cached_input_tokens": 149
+    }
+  },
+  "cohort_episode_elapsed_seconds": {
+    "known_episodes": 450,
+    "missing_episodes": 0,
+    "total": 6304.958027,
+    "median": 5.700552500000001,
+    "minimum": 2.657388,
+    "maximum": 58.560118
+  },
+  "rows": [
+    {
+      "model": "claude-haiku-5-5",
+      "harness": "kwts-json-tools-v1.3-repeated",
+      "planned_episodes": 150,
+      "recorded_episodes": 150,
+      "status_counts": {
+        "complete": 100,
+        "escalated": 50
+      },
+      "status_groups": {
+        "accepted_terminal": 150,
+        "interface_failure": 0,
+        "response_or_action_failure": 0
+      },
+      "reported_token_usage": {
+        "usage_known_episodes": 150,
+        "usage_missing_or_partial_episodes": 0,
+        "usage_partially_known_episodes": 0,
+        "reported_totals": {
+          "input_tokens": 1472567,
+          "output_tokens": 141155,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cached_input_tokens": null
+        },
+        "episodes_reporting_field": {
+          "input_tokens": 150,
+          "output_tokens": 150,
+          "cache_creation_input_tokens": 150,
+          "cache_read_input_tokens": 150,
+          "cached_input_tokens": 0
+        }
+      },
+      "execution_counts": {
+        "host_actions": 768,
+        "astra_host_proposal_batches": null,
+        "returned_native_response_payloads": 350,
+        "logical_native_requests": 350,
+        "native_transport_attempts": 350
+      },
+      "episode_elapsed_seconds": {
+        "known_episodes": 150,
+        "missing_episodes": 0,
+        "total": 712.403306,
+        "median": 4.688703,
+        "minimum": 2.657388,
+        "maximum": 7.914781
+      },
+      "cli_error_diagnostics": null,
+      "cost_usd": null
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "harness": "kwts-json-tools-v1.3-repeated",
+      "planned_episodes": 150,
+      "recorded_episodes": 150,
+      "status_counts": {
+        "complete": 100,
+        "escalated": 50
+      },
+      "status_groups": {
+        "accepted_terminal": 150,
+        "interface_failure": 0,
+        "response_or_action_failure": 0
+      },
+      "reported_token_usage": {
+        "usage_known_episodes": 150,
+        "usage_missing_or_partial_episodes": 0,
+        "usage_partially_known_episodes": 0,
+        "reported_totals": {
+          "input_tokens": 1359034,
+          "output_tokens": 82454,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cached_input_tokens": null
+        },
+        "episodes_reporting_field": {
+          "input_tokens": 150,
+          "output_tokens": 150,
+          "cache_creation_input_tokens": 150,
+          "cache_read_input_tokens": 150,
+          "cached_input_tokens": 0
+        }
+      },
+      "execution_counts": {
+        "host_actions": 730,
+        "astra_host_proposal_batches": null,
+        "returned_native_response_payloads": 340,
+        "logical_native_requests": 340,
+        "native_transport_attempts": 340
+      },
+      "episode_elapsed_seconds": {
+        "known_episodes": 150,
+        "missing_episodes": 0,
+        "total": 786.78031,
+        "median": 5.3774215000000005,
+        "minimum": 3.318045,
+        "maximum": 9.841874
+      },
+      "cli_error_diagnostics": null,
+      "cost_usd": null
+    },
+    {
+      "model": "gpt-6-astra",
+      "harness": "kwts-codex-subagent-tools-v1",
+      "planned_episodes": 150,
+      "recorded_episodes": 150,
+      "status_counts": {
+        "cli_error": 9,
+        "cli_process_failure": 1,
+        "complete": 91,
+        "escalated": 49
+      },
+      "status_groups": {
+        "accepted_terminal": 140,
+        "interface_failure": 10,
+        "response_or_action_failure": 0
+      },
+      "reported_token_usage": {
+        "usage_known_episodes": 149,
+        "usage_missing_or_partial_episodes": 1,
+        "usage_partially_known_episodes": 0,
+        "reported_totals": {
+          "input_tokens": 6442962,
+          "output_tokens": 41342,
+          "cache_creation_input_tokens": null,
+          "cache_read_input_tokens": null,
+          "cached_input_tokens": 3904000
+        },
+        "episodes_reporting_field": {
+          "input_tokens": 149,
+          "output_tokens": 149,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cached_input_tokens": 149
+        }
+      },
+      "execution_counts": {
+        "host_actions": 1031,
+        "astra_host_proposal_batches": 382,
+        "returned_native_response_payloads": null,
+        "logical_native_requests": null,
+        "native_transport_attempts": null
+      },
+      "episode_elapsed_seconds": {
+        "known_episodes": 150,
+        "missing_episodes": 0,
+        "total": 4805.774411,
+        "median": 30.832086,
+        "minimum": 8.556537,
+        "maximum": 58.560118
+      },
+      "cli_error_diagnostics": {
+        "error_events": 405,
+        "capacity_events": 2,
+        "reconnect_events": 19,
+        "other_error_events": 384
+      },
+      "cost_usd": null
+    }
+  ],
+  "cost_usd": null,
+  "disclosures": {
+    "usage": "Only known flat numeric fields are totaled as reported; input and cache fields remain separate. Null means no known report, not zero. Usage-known requires both input and output. Partial reports contribute only present fields. Nested usage and failed generations with unavailable usage are omitted; totals are not complete billing totals or evidence of zero cost.",
+    "responses": "Native counts are returned API response payloads and logged logical requests/attempts; unreturned generations behind retries are unavailable. Astra counts host proposal batches, including rejected batches. Its native backend response count is unavailable and remains null; Codex scaffolding and provider-managed retries prevent native API parity.",
+    "elapsed": "Totals and distributions use recorded per-episode elapsed seconds only, with missing values retained as missing. Their sum is not concurrent cohort wall-clock runtime.",
+    "status_groups": "Accepted terminal means host complete/escalated status, not native task accuracy. Interface failures are separated from remaining response/action failures, and every planned episode remains counted. Host action counts include logged blocked malformed irreversible proposal attempts; they are not accepted-transmission counts.",
+    "error_policy": "The frozen Astra parser conservatively fails any CLI error event even if eventual completion follows; no retrospective forgiveness or rerun. Optional diagnostic counts inspect error-event metadata only, include any permitted preflight error item, export no raw error text, and never change native classification.",
+    "cost": "cost_usd is null because billing totals and verified prices are unavailable. No price guess or zero-cost inference is made."
+  }
+}

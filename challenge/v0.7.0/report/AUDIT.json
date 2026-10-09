@@ -1,0 +1,52 @@
+{
+  "schema": "kwts-publication-audit-summary-v1",
+  "phase": "pre_publication_audit",
+  "status": "passed",
+  "review_model": "gpt-6-astra",
+  "review_context": "fresh, separate from participants and note judges",
+  "publication_blockers": 0,
+  "independent_checks_passed": 385,
+  "pre_run_public_commit": "c826678d1a4b5cd8e2f78e6097331ab87f285b49",
+  "planned_episodes": 450,
+  "recorded_episodes": 450,
+  "replayed_episodes": 450,
+  "replayed_host_actions": 2529,
+  "accepted_notes": 149,
+  "notes_graded_once": 149,
+  "unreviewed_notes": 0,
+  "astra_interface_failures_retained": 10,
+  "protected_pre_run_files_unchanged": 44,
+  "frozen_public_files_unchanged": 23,
+  "historical_files_unchanged": 228,
+  "original_runs_and_native_scores_preserved": true,
+  "first_note_grades_preserved": true,
+  "frozen_aggregate_export_exact": true,
+  "active_private_identifiers_or_payloads_published": false,
+  "retrospective_participant_reruns": 0,
+  "human_healthcare_validation": "pending",
+  "limitations": [
+    "Ten nonrandom synthetic families; decision metrics at ceiling for accepted terminal episodes.",
+    "AI-only review; Astra participant and note reviewers share a model family, with possible bias.",
+    "Astra backend identity unavailable; CLI scaffold, transport and inference budgets differ from native API rows.",
+    "Output cap checked after Astra generation; missing usage and billing totals remain unavailable."
+  ],
+  "audited_public_files": {
+    "REPORT.md": {
+      "sha256": "68344c616867f5507bb5589e9d69cfef6b7967cfb8bbb35bc2f0abe653c3cb3b",
+      "bytes": 10009
+    },
+    "aggregate.json": {
+      "sha256": "0b8f9a3880202d8e2e2cdfc310e79a6fbf1aec1275d9ebbd36e4d126ee12b2f6",
+      "bytes": 59473
+    },
+    "controls.json": {
+      "sha256": "fcee3406697a3a46ae0d1b985a946b21c019dc7fd6da4248f0f27f9ffa2acb29",
+      "bytes": 4456
+    },
+    "execution.json": {
+      "sha256": "06b2bc792a159c50c8bca688c367000ad20530c1145c40de1486a5aa4c455565",
+      "bytes": 7578
+    }
+  },
+  "detailed_evidence": "Operator-held private receipts; protected cases and commitment salts remain private."
+}
